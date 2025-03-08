@@ -1,12 +1,12 @@
 ---
-title: "Exercise 2: Transfer Learning"
+title: "Exercise: Transfer Learning"
 format: 
     revealjs:
       smaller: true
       center: true
 ---
 
-## Game Time
+## Your turn
 
 Here is a Jupyter notebook you can download for further exploration:
 

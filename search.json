@@ -295,30 +295,30 @@
     "text": "How To Add a Dataset\n\nClick + Add Input at the top right of the notebook.\nChoose Datasets and search for the keyword (e.g. ‘cat-breed-mardhik’). Several datasets will appear. Look for and ‘Add’ the dataset."
   },
   {
-    "objectID": "slides/slides-04-deep-learning-exercise.html#game-time",
-    "href": "slides/slides-04-deep-learning-exercise.html#game-time",
-    "title": "Exercise 2: Transfer Learning",
-    "section": "Game Time",
-    "text": "Game Time\nHere is a Jupyter notebook you can download for further exploration:\nDownload and Save the Jupyter Notebook"
+    "objectID": "slides/slides-04-deep-learning-exercise.html#your-turn",
+    "href": "slides/slides-04-deep-learning-exercise.html#your-turn",
+    "title": "Exercise: Transfer Learning",
+    "section": "Your turn",
+    "text": "Your turn\nHere is a Jupyter notebook you can download for further exploration:\nDownload and Save the Jupyter Notebook"
   },
   {
     "objectID": "slides/slides-04-deep-learning-exercise.html#how-to-work-on-kaggle",
     "href": "slides/slides-04-deep-learning-exercise.html#how-to-work-on-kaggle",
-    "title": "Exercise 2: Transfer Learning",
+    "title": "Exercise: Transfer Learning",
     "section": "How To Work On Kaggle",
     "text": "How To Work On Kaggle\n\nGo to https://www.kaggle.com/kernels\nMake an account if you don’t have one, and verify your phone number (to get access to GPUs)\nSelect + New Notebook \nGo to File -&gt; Import Notebook \nUpload the downloaded notebook"
   },
   {
     "objectID": "slides/slides-04-deep-learning-exercise.html#how-to-work-on-kaggle-1",
     "href": "slides/slides-04-deep-learning-exercise.html#how-to-work-on-kaggle-1",
-    "title": "Exercise 2: Transfer Learning",
+    "title": "Exercise: Transfer Learning",
     "section": "How To Work On Kaggle",
     "text": "How To Work On Kaggle\n\nOn the right-hand side of your Kaggle notebook, make sure:\n\n\nInternet is enabled.\nIn the Accelerator dropdown, choose GPU when you’re ready to use it (you can turn it on/off as you need it).\n\n\nFollow the guidelines in the notebook"
   },
   {
     "objectID": "slides/slides-04-deep-learning-exercise.html#how-to-add-a-dataset",
     "href": "slides/slides-04-deep-learning-exercise.html#how-to-add-a-dataset",
-    "title": "Exercise 2: Transfer Learning",
+    "title": "Exercise: Transfer Learning",
     "section": "How To Add a Dataset",
     "text": "How To Add a Dataset\n\nClick + Add data at the top right of the notebook.\nChoose Datasets and search for the keyword (e.g. ‘cat-breed-mardhik’). Several datasets will appear. Look for and ‘Add’ the dataset."
   },
@@ -469,26 +469,18 @@
     ]
   },
   {
-    "objectID": "workshop-05-exercise2.html",
-    "href": "workshop-05-exercise2.html",
+    "objectID": "workshop-05-exercise.html",
+    "href": "workshop-05-exercise.html",
     "title": "Exercise: Transfer Learning",
     "section": "",
-    "text": "View slides in full screen",
-    "crumbs": [
-      "Workshop",
-      "Exercise: Transfer Learning"
-    ]
+    "text": "View slides in full screen"
   },
   {
-    "objectID": "workshop-05-exercise2.html#slides",
-    "href": "workshop-05-exercise2.html#slides",
+    "objectID": "workshop-05-exercise.html#slides",
+    "href": "workshop-05-exercise.html#slides",
     "title": "Exercise: Transfer Learning",
     "section": "",
-    "text": "View slides in full screen",
-    "crumbs": [
-      "Workshop",
-      "Exercise: Transfer Learning"
-    ]
+    "text": "View slides in full screen"
   },
   {
     "objectID": "slides/slides-03-deep-learning.html#learning-outcomes",
