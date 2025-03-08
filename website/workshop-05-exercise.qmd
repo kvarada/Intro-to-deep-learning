@@ -1,6 +1,6 @@
 ---
 title: "Exercise: Transfer Learning" 
-description: Hands on exercise on transfer learning
+description: Hands-on exercise on transfer learning
 description-short: 
 duration: 20 mins
 time: 16:05 - 16:25

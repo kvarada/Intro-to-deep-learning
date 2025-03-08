@@ -38,7 +38,7 @@ website:
         - workshop-02.qmd
         - workshop-03.qmd
         - workshop-04-break.qmd
-        - workshop-05-exercise2.qmd
+        - workshop-05-exercise.qmd
         - workshop-06.qmd
 format:
   html:

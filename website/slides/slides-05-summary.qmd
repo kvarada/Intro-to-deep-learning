@@ -1,6 +1,5 @@
 ---
 title: Summary and conclusion
-date: 2024-12-07
 
 format:
     revealjs:
@@ -15,7 +14,6 @@ editor:
 
 ## What did we cover? 
 
-- Supervised machine learning fundamentals
 - Introduction to linear models 
 - Introduction to deep learning and transfer learning
 
@@ -53,7 +51,7 @@ editor:
 
 - That's it! Thank you for attending our workshop.
 - We would greatly appreciate your feedback.
-  - Feedback form: [https://forms.gle/xnkDu7nHqHTcWyk8A](https://forms.gle/xnkDu7nHqHTcWyk8A)
+  - Feedback form: )
 - Your input will also help us advocate for organizing more workshops like this in the future.
 
 ![](img/eva-signing-off.png)
