@@ -1,0 +1,21 @@
+---
+title: "Deep Learning"
+description: "Introduction to Deep Learning and trasfer learning"
+description-short: "Introduction to Deep Learning and trasfer learning"
+duration: 60 mins
+time: 15:20 - 16:00
+
+editor: { render-on-save: true }
+---
+
+## Slides
+
+{{< revealjs "slides/slides-03-deep-learning.html" height="600px" class="ratio ratio-16x9" >}}
+
+
+## Outline
+
+- Neural Networks
+- Transfer learning
+- Object detection
+

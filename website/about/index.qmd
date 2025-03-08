@@ -1,0 +1,30 @@
+---
+title: "Our team"
+
+sidebar: false
+repo-actions: false
+page-navigation: false
+
+listing:
+  template: about.ejs
+  contents:
+    - name: Varada Kolhatkar
+      instructor: true
+      role: "Assistant Professor of Teaching, Computer Science, Master of Data Science"
+      image: varada.png
+    - name: Tony Shum
+      role: "Data Engineer & Data Scientist"
+      image: tony.jpeg
+      assistant: true
+    - name: Irmak Bayir
+      organizer: true
+      role: "Women in CS UBC, VP Finance"
+      image: irmak.jpeg
+
+---
+
+::: column-body
+::: {#listing}
+
+:::
+:::

@@ -1,0 +1,20 @@
+---
+title: "Summary and wrap up"
+description: Summarizing the take aways from the workshop
+description-short: 
+duration: 5 min
+time: 16:25 - 16:30
+
+editor: { render-on-save: true }
+---
+
+## Slides
+
+{{< revealjs "slides/slides-05-summary.html" height="600px" class="ratio ratio-16x9" >}}
+
+## Outline
+
+- Summary 
+- Thanks 
+- Survey 
+

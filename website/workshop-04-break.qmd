@@ -1,0 +1,11 @@
+---
+title: Break
+description: >
+  Move around. 
+duration: 2 mins
+time: 16:00 - 16:02
+countdown:
+  box_shadow: none
+---
+
+![](slides/img/eva-coffee.png)
