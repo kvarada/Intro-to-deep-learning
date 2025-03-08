@@ -398,7 +398,7 @@
     "href": "slides/slides-05-summary.html#what-did-we-cover",
     "title": "Summary and conclusion",
     "section": "What did we cover?",
-    "text": "What did we cover?\n\nSupervised machine learning fundamentals\nIntroduction to linear models\nIntroduction to deep learning and transfer learning"
+    "text": "What did we cover?\n\nIntroduction to linear models\nIntroduction to deep learning and transfer learning"
   },
   {
     "objectID": "slides/slides-05-summary.html#a-bit-about-our-mds-program",
@@ -426,7 +426,7 @@
     "href": "slides/slides-05-summary.html#how-did-we-do",
     "title": "Summary and conclusion",
     "section": "How did we do?",
-    "text": "How did we do?\n\nThat’s it! Thank you for attending our workshop.\nWe would greatly appreciate your feedback.\n\nFeedback form: https://forms.gle/xnkDu7nHqHTcWyk8A\n\nYour input will also help us advocate for organizing more workshops like this in the future."
+    "text": "How did we do?\n\nThat’s it! Thank you for attending our workshop.\nWe would greatly appreciate your feedback.\n\nFeedback form: )\n\nYour input will also help us advocate for organizing more workshops like this in the future."
   },
   {
     "objectID": "about/index.html",
@@ -473,14 +473,22 @@
     "href": "workshop-05-exercise.html",
     "title": "Exercise: Transfer Learning",
     "section": "",
-    "text": "View slides in full screen"
+    "text": "View slides in full screen",
+    "crumbs": [
+      "Workshop",
+      "Exercise: Transfer Learning"
+    ]
   },
   {
     "objectID": "workshop-05-exercise.html#slides",
     "href": "workshop-05-exercise.html#slides",
     "title": "Exercise: Transfer Learning",
     "section": "",
-    "text": "View slides in full screen"
+    "text": "View slides in full screen",
+    "crumbs": [
+      "Workshop",
+      "Exercise: Transfer Learning"
+    ]
   },
   {
     "objectID": "slides/slides-03-deep-learning.html#learning-outcomes",
