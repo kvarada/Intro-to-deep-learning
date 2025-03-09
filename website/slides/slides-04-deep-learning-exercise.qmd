@@ -28,7 +28,6 @@ Follow the guidelines in the next page.
 
 4. Select `+ New Notebook`
 <img src="img/create_notebook.png" alt="drawing" width="400"/>
-
 5. Click `File` on the top left side of your Kaggle notebook, select `Import Notebook`
 <img src="img/import_notebook.png" alt="drawing" width="400"/>
 
@@ -39,6 +38,8 @@ Follow the guidelines in the next page.
 7. On the right-hand side of your Kaggle notebook, find `Session options` and make sure:
 
   - `INTERNET` is enabled.
+
+  - You have clicked on the 'Get phone verified' text at the bottom of the options menu to enable the `ACCELERATOR` dropdown.
 
   - In the `ACCELERATOR` dropdown, choose the options starts with `GPU` when you're ready to use it (you can turn it on/off as you need it).
   
