@@ -10,7 +10,7 @@ format:
 
 Here is a Jupyter notebook you can download for further exploration:
 
-[Download and Save the Jupyter Notebook](https://github.com/kvarada/Intro-to-ML-workshop-2024/blob/main/website/slides/downloads/exercise-02-deep-learning.ipynb)
+[Download and Save the Jupyter Notebook](https://github.com/kvarada/Intro-to-deep-learning/blob/main/website/slides/downloads/exercise-02-deep-learning.ipynb)
 
 <!--
 [Download and Save the Jupyter Notebook](downloads/exercise-02-deep-learning.ipynb){.btn .btn-primary}
@@ -18,35 +18,37 @@ Follow the guidelines in the next page.
 <img src="img/save_notebook.png" alt="drawing" width="400"/>
 -->
 
-## How To Work On Kaggle
+## Getting Started with Kaggle Kernels
 
-1. Go to [https://www.kaggle.com/kernels](https://www.kaggle.com/kernels)
-2. Make an account if you don't have one, and verify your phone number (to get access to GPUs)
-3. Select `+ New Notebook`
+1. Create an Kaggle account [here](https://www.kaggle.com/) if you don't have one yet
+
+2. Verify your phone number [here](https://www.kaggle.com/settings) to get access to GPUs
+
+3. Go to [Kaggle Kernels](https://www.kaggle.com/kernels)
+
+4. Select `+ New Notebook`
 <img src="img/create_notebook.png" alt="drawing" width="400"/>
 
-4. Go to `File -> Import Notebook`
+5. Click `File` on the top left side of your Kaggle notebook, select `Import Notebook`
 <img src="img/import_notebook.png" alt="drawing" width="400"/>
 
-5. Upload the downloaded notebook
+## Getting Started with Kaggle Kernels
 
+6. Upload this notebook
 
-## How To Work On Kaggle
+7. On the right-hand side of your Kaggle notebook, find `Session options` and make sure:
 
-6. On the right-hand side of your Kaggle notebook, make sure:
-  - `Internet` is enabled.
+  - `INTERNET` is enabled.
+
+  - In the `ACCELERATOR` dropdown, choose the options starts with `GPU` when you're ready to use it (you can turn it on/off as you need it).
   
-  - In the `Accelerator` dropdown, choose `GPU` when you're ready to use it (you can turn it on/off as you need it).
+8. Follow the steps in the notebook
 
-7. Follow the guidelines in the notebook
+## Getting Started with Kaggle Datasets
 
-<img src="img/notebook_options.png" alt="drawing" width="400"/>
+1. On the right-hand side of your Kaggle notebook, find `Input` and click `+ Add Input`.
 
-## How To Add a Dataset
-
-1. Click `+ Add data` at the top right of the notebook.
-
-2. Choose `Datasets` and search for the keyword (e.g. 'cat-breed-mardhik'). Several datasets will appear. Look for and 'Add' the dataset.
+2. Choose `Datasets`. In the search bar, type your keyword (Example: 'cat-breed-mardhik') and click `+` to add the dataset if it is not added yet.
 
 <img src="img/add_data1.png" alt="drawing" width="400"/>
 <img src="img/add_data2.png" alt="drawing" width="400"/>
