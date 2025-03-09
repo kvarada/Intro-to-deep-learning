@@ -19,7 +19,7 @@ listing:
     - name: Irmak Bayir
       organizer: true
       role: "Women in CS UBC, VP Finance"
-      image: irmak.jpeg
+      image: irmak.jpg
 
 ---
 
