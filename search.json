@@ -274,82 +274,39 @@
     ]
   },
   {
-    "objectID": "slides/slides-09-ml-exercise.html#how-to-work-on-kaggle",
-    "href": "slides/slides-09-ml-exercise.html#how-to-work-on-kaggle",
-    "title": "Introduction to Machine Learning Workshop",
-    "section": "How To Work On Kaggle",
-    "text": "How To Work On Kaggle\n\nGo to https://www.kaggle.com/kernels\nMake an account if you don’t have one\nSelect + New Notebook \nGo to File -&gt; Import Notebook \nUpload this notebook"
+    "objectID": "slides/slides-05-summary.html#what-did-we-cover",
+    "href": "slides/slides-05-summary.html#what-did-we-cover",
+    "title": "Summary and conclusion",
+    "section": "What did we cover?",
+    "text": "What did we cover?\n\nIntroduction to linear models\nIntroduction to deep learning and transfer learning"
   },
   {
-    "objectID": "slides/slides-09-ml-exercise.html#how-to-work-on-kaggle-1",
-    "href": "slides/slides-09-ml-exercise.html#how-to-work-on-kaggle-1",
-    "title": "Introduction to Machine Learning Workshop",
-    "section": "How To Work On Kaggle",
-    "text": "How To Work On Kaggle\n\nOn the right-hand side of your Kaggle notebook, make sure:\n\n\nInternet is enabled.\n\n\nFollow the guidelines in the notebook"
+    "objectID": "slides/slides-05-summary.html#a-bit-about-our-mds-program",
+    "href": "slides/slides-05-summary.html#a-bit-about-our-mds-program",
+    "title": "Summary and conclusion",
+    "section": "A bit about our MDS program",
+    "text": "A bit about our MDS program\n\nMaster of Data Science (MDS) is a 10-month accelerated professional program\n24 1-credit courses in 8 months + 2 months Capstone with industry/academia partners\nUnique partnership between CS, Stats, and Linguistics\nCurriculum designed from scratch"
   },
   {
-    "objectID": "slides/slides-09-ml-exercise.html#how-to-add-a-dataset",
-    "href": "slides/slides-09-ml-exercise.html#how-to-add-a-dataset",
-    "title": "Introduction to Machine Learning Workshop",
-    "section": "How To Add a Dataset",
-    "text": "How To Add a Dataset\n\nClick + Add Input at the top right of the notebook.\nChoose Datasets and search for the keyword (e.g. ‘cat-breed-mardhik’). Several datasets will appear. Look for and ‘Add’ the dataset."
+    "objectID": "slides/slides-05-summary.html#our-audience",
+    "href": "slides/slides-05-summary.html#our-audience",
+    "title": "Summary and conclusion",
+    "section": "Our audience",
+    "text": "Our audience\n\nIndividuals with basic knowledge of programming, statistics, calculus, and linear algebra.\nProfessionals currently working with data, seeking a systematic understanding of data science to effectively solve their data problems\nThose looking for a career change, feeling bored, or aiming to upskill\nFresh undergrads with research experience or who have completed co-ops or internships"
   },
   {
-    "objectID": "slides/slides-04-deep-learning-exercise.html#your-turn",
-    "href": "slides/slides-04-deep-learning-exercise.html#your-turn",
-    "title": "Exercise: Transfer Learning",
-    "section": "Your turn",
-    "text": "Your turn\nHere is a Jupyter notebook you can download for further exploration:\nDownload and Save the Jupyter Notebook"
+    "objectID": "slides/slides-05-summary.html#some-possibilities",
+    "href": "slides/slides-05-summary.html#some-possibilities",
+    "title": "Summary and conclusion",
+    "section": "Some possibilities",
+    "text": "Some possibilities\n\n\n\nSubmit a data science related Capstone project and work with our students\nIf you are interested in applying to the program check out our web page: https://ubc-mds.github.io/"
   },
   {
-    "objectID": "slides/slides-04-deep-learning-exercise.html#how-to-work-on-kaggle",
-    "href": "slides/slides-04-deep-learning-exercise.html#how-to-work-on-kaggle",
-    "title": "Exercise: Transfer Learning",
-    "section": "How To Work On Kaggle",
-    "text": "How To Work On Kaggle\n\nGo to https://www.kaggle.com/kernels\nMake an account if you don’t have one, and verify your phone number (to get access to GPUs)\nSelect + New Notebook \nGo to File -&gt; Import Notebook \nUpload the downloaded notebook"
-  },
-  {
-    "objectID": "slides/slides-04-deep-learning-exercise.html#how-to-work-on-kaggle-1",
-    "href": "slides/slides-04-deep-learning-exercise.html#how-to-work-on-kaggle-1",
-    "title": "Exercise: Transfer Learning",
-    "section": "How To Work On Kaggle",
-    "text": "How To Work On Kaggle\n\nOn the right-hand side of your Kaggle notebook, make sure:\n\n\nInternet is enabled.\nIn the Accelerator dropdown, choose GPU when you’re ready to use it (you can turn it on/off as you need it).\n\n\nFollow the guidelines in the notebook"
-  },
-  {
-    "objectID": "slides/slides-04-deep-learning-exercise.html#how-to-add-a-dataset",
-    "href": "slides/slides-04-deep-learning-exercise.html#how-to-add-a-dataset",
-    "title": "Exercise: Transfer Learning",
-    "section": "How To Add a Dataset",
-    "text": "How To Add a Dataset\n\nClick + Add data at the top right of the notebook.\nChoose Datasets and search for the keyword (e.g. ‘cat-breed-mardhik’). Several datasets will appear. Look for and ‘Add’ the dataset."
-  },
-  {
-    "objectID": "workshop.html",
-    "href": "workshop.html",
-    "title": "Overview",
-    "section": "",
-    "text": "Title\n\n\ntime\n\n\nDescription\n\n\n\n\n\n\nWelcome and getting started\n\n\n15:00 - 15:05\n\n\nHello and welcome to the workshop!\n\n\n\n\nML Fundamentals\n\n\n15:05 - 15:20\n\n\nIntroduction to Machine Learning Fundamentals\n\n\n\n\nDeep Learning\n\n\n15:20 - 16:00\n\n\nIntroduction to Deep Learning and trasfer learning\n\n\n\n\nBreak\n\n\n16:00 - 16:02\n\n\n \n\n\n\n\nExercise: Transfer Learning\n\n\n16:05 - 16:25\n\n\n \n\n\n\n\nSummary and wrap up\n\n\n16:25 - 16:30\n\n\n \n\n\n\n\n\nNo matching items",
-    "crumbs": [
-      "Workshop",
-      "Overview"
-    ]
-  },
-  {
-    "objectID": "workshop.html#schedule",
-    "href": "workshop.html#schedule",
-    "title": "Overview",
-    "section": "",
-    "text": "Title\n\n\ntime\n\n\nDescription\n\n\n\n\n\n\nWelcome and getting started\n\n\n15:00 - 15:05\n\n\nHello and welcome to the workshop!\n\n\n\n\nML Fundamentals\n\n\n15:05 - 15:20\n\n\nIntroduction to Machine Learning Fundamentals\n\n\n\n\nDeep Learning\n\n\n15:20 - 16:00\n\n\nIntroduction to Deep Learning and trasfer learning\n\n\n\n\nBreak\n\n\n16:00 - 16:02\n\n\n \n\n\n\n\nExercise: Transfer Learning\n\n\n16:05 - 16:25\n\n\n \n\n\n\n\nSummary and wrap up\n\n\n16:25 - 16:30\n\n\n \n\n\n\n\n\nNo matching items",
-    "crumbs": [
-      "Workshop",
-      "Overview"
-    ]
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Welcome",
-    "section": "",
-    "text": "Welcome\nWelcome everyone to the “Women in AI: Introduction to Deep Learning Workshop”\n\nWhen 🕘 3:00 pm to 4:30 pm on March 15th, 2025\nWhere? 📍 Big 4 Conference Center UBC\n\n\n\nThis workshop aims to provide an accessible introduction to deep learning and inspire a more diverse group of students to explore Machine Learning."
+    "objectID": "slides/slides-05-summary.html#how-did-we-do",
+    "href": "slides/slides-05-summary.html#how-did-we-do",
+    "title": "Summary and conclusion",
+    "section": "How did we do?",
+    "text": "How did we do?\n\nThat’s it! Thank you for attending our workshop.\nWe would greatly appreciate your feedback.\n\nFeedback form: )\n\nYour input will also help us advocate for organizing more workshops like this in the future."
   },
   {
     "objectID": "slides/slides-01-intro.html#welcome-to-the-workshop",
@@ -394,39 +351,61 @@
     "text": "Source of the website\n\nWe are using Quarto to create slides, with live code running in the background. You can access the source for this website and our slides on this GitHub page https://github.com/kvarada/Intro-to-deep-learning"
   },
   {
-    "objectID": "slides/slides-05-summary.html#what-did-we-cover",
-    "href": "slides/slides-05-summary.html#what-did-we-cover",
-    "title": "Summary and conclusion",
-    "section": "What did we cover?",
-    "text": "What did we cover?\n\nIntroduction to linear models\nIntroduction to deep learning and transfer learning"
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Welcome",
+    "section": "",
+    "text": "Welcome\nWelcome everyone to the “Women in AI: Introduction to Deep Learning Workshop”\n\nWhen 🕘 3:00 pm to 4:30 pm on March 15th, 2025\nWhere? 📍 Big 4 Conference Center UBC\n\n\n\nThis workshop aims to provide an accessible introduction to deep learning and inspire a more diverse group of students to explore Machine Learning."
   },
   {
-    "objectID": "slides/slides-05-summary.html#a-bit-about-our-mds-program",
-    "href": "slides/slides-05-summary.html#a-bit-about-our-mds-program",
-    "title": "Summary and conclusion",
-    "section": "A bit about our MDS program",
-    "text": "A bit about our MDS program\n\nMaster of Data Science (MDS) is a 10-month accelerated professional program\n24 1-credit courses in 8 months + 2 months Capstone with industry/academia partners\nUnique partnership between CS, Stats, and Linguistics\nCurriculum designed from scratch"
+    "objectID": "workshop.html",
+    "href": "workshop.html",
+    "title": "Overview",
+    "section": "",
+    "text": "Title\n\n\ntime\n\n\nDescription\n\n\n\n\n\n\nWelcome and getting started\n\n\n15:00 - 15:05\n\n\nHello and welcome to the workshop!\n\n\n\n\nML Fundamentals\n\n\n15:05 - 15:20\n\n\nIntroduction to Machine Learning Fundamentals\n\n\n\n\nDeep Learning\n\n\n15:20 - 16:00\n\n\nIntroduction to Deep Learning and trasfer learning\n\n\n\n\nBreak\n\n\n16:00 - 16:02\n\n\n \n\n\n\n\nExercise: Transfer Learning\n\n\n16:05 - 16:25\n\n\n \n\n\n\n\nSummary and wrap up\n\n\n16:25 - 16:30\n\n\n \n\n\n\n\n\nNo matching items",
+    "crumbs": [
+      "Workshop",
+      "Overview"
+    ]
   },
   {
-    "objectID": "slides/slides-05-summary.html#our-audience",
-    "href": "slides/slides-05-summary.html#our-audience",
-    "title": "Summary and conclusion",
-    "section": "Our audience",
-    "text": "Our audience\n\nIndividuals with basic knowledge of programming, statistics, calculus, and linear algebra.\nProfessionals currently working with data, seeking a systematic understanding of data science to effectively solve their data problems\nThose looking for a career change, feeling bored, or aiming to upskill\nFresh undergrads with research experience or who have completed co-ops or internships"
+    "objectID": "workshop.html#schedule",
+    "href": "workshop.html#schedule",
+    "title": "Overview",
+    "section": "",
+    "text": "Title\n\n\ntime\n\n\nDescription\n\n\n\n\n\n\nWelcome and getting started\n\n\n15:00 - 15:05\n\n\nHello and welcome to the workshop!\n\n\n\n\nML Fundamentals\n\n\n15:05 - 15:20\n\n\nIntroduction to Machine Learning Fundamentals\n\n\n\n\nDeep Learning\n\n\n15:20 - 16:00\n\n\nIntroduction to Deep Learning and trasfer learning\n\n\n\n\nBreak\n\n\n16:00 - 16:02\n\n\n \n\n\n\n\nExercise: Transfer Learning\n\n\n16:05 - 16:25\n\n\n \n\n\n\n\nSummary and wrap up\n\n\n16:25 - 16:30\n\n\n \n\n\n\n\n\nNo matching items",
+    "crumbs": [
+      "Workshop",
+      "Overview"
+    ]
   },
   {
-    "objectID": "slides/slides-05-summary.html#some-possibilities",
-    "href": "slides/slides-05-summary.html#some-possibilities",
-    "title": "Summary and conclusion",
-    "section": "Some possibilities",
-    "text": "Some possibilities\n\n\n\nSubmit a data science related Capstone project and work with our students\nIf you are interested in applying to the program check out our web page: https://ubc-mds.github.io/"
+    "objectID": "slides/slides-04-deep-learning-exercise.html#your-turn",
+    "href": "slides/slides-04-deep-learning-exercise.html#your-turn",
+    "title": "Exercise: Transfer Learning",
+    "section": "Your turn",
+    "text": "Your turn\nHere is a Jupyter notebook you can download for further exploration:\nDownload and Save the Jupyter Notebook"
   },
   {
-    "objectID": "slides/slides-05-summary.html#how-did-we-do",
-    "href": "slides/slides-05-summary.html#how-did-we-do",
-    "title": "Summary and conclusion",
-    "section": "How did we do?",
-    "text": "How did we do?\n\nThat’s it! Thank you for attending our workshop.\nWe would greatly appreciate your feedback.\n\nFeedback form: )\n\nYour input will also help us advocate for organizing more workshops like this in the future."
+    "objectID": "slides/slides-04-deep-learning-exercise.html#getting-started-with-kaggle-kernels",
+    "href": "slides/slides-04-deep-learning-exercise.html#getting-started-with-kaggle-kernels",
+    "title": "Exercise: Transfer Learning",
+    "section": "Getting Started with Kaggle Kernels",
+    "text": "Getting Started with Kaggle Kernels\n\nCreate an Kaggle account here if you don’t have one yet\nVerify your phone number here to get access to GPUs\nGo to Kaggle Kernels\nSelect + New Notebook \nClick File on the top left side of your Kaggle notebook, select Import Notebook"
+  },
+  {
+    "objectID": "slides/slides-04-deep-learning-exercise.html#getting-started-with-kaggle-kernels-1",
+    "href": "slides/slides-04-deep-learning-exercise.html#getting-started-with-kaggle-kernels-1",
+    "title": "Exercise: Transfer Learning",
+    "section": "Getting Started with Kaggle Kernels",
+    "text": "Getting Started with Kaggle Kernels\n\nUpload this notebook\nOn the right-hand side of your Kaggle notebook, find Session options and make sure:\n\n\nINTERNET is enabled.\nIn the ACCELERATOR dropdown, choose the options starts with GPU when you’re ready to use it (you can turn it on/off as you need it).\n\n\nFollow the steps in the notebook"
+  },
+  {
+    "objectID": "slides/slides-04-deep-learning-exercise.html#getting-started-with-kaggle-datasets",
+    "href": "slides/slides-04-deep-learning-exercise.html#getting-started-with-kaggle-datasets",
+    "title": "Exercise: Transfer Learning",
+    "section": "Getting Started with Kaggle Datasets",
+    "text": "Getting Started with Kaggle Datasets\n\nOn the right-hand side of your Kaggle notebook, find Input and click + Add Input.\nChoose Datasets. In the search bar, type your keyword (Example: ‘cat-breed-mardhik’) and click + to add the dataset if it is not added yet."
   },
   {
     "objectID": "about/index.html",
