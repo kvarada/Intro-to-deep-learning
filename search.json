@@ -334,7 +334,7 @@
     "href": "slides/slides-01-intro.html#learning-goals-of-the-workshop",
     "title": "Welcome!",
     "section": "Learning goals of the workshop",
-    "text": "Learning goals of the workshop\n\n\n\nThe primary learning goal of the workshop is to familiarize yourself with basics of neural networks and how can you use and for image classification."
+    "text": "Learning goals of the workshop\n\n\n\nThe primary learning goal of the workshop is to familiarize yourself with basics of neural networks and use transfer learning for image classification."
   },
   {
     "objectID": "slides/slides-01-intro.html#agenda",
