@@ -1,10 +1,89 @@
 ---
-title: "Introduction to Linear Models"
+title: "Introduction to Machine learning"
 format: 
     revealjs:
       smaller: true
       center: true
 ---
+
+# What is Machine Learning (ML)?
+
+## Example: Image classification
+
+- Have you used search in Google Photos? You can search for "my photos of cat" and it will retrieve photos from your libraries containing cats.
+- This can be done using **image classification**, which is treated as a supervised learning problem. 
+
+## Image classification
+
+- Imagine writing a Python program to differenciate between cats and foxes.  
+
+:::: {.columns}
+
+::: {.column width="60%"}
+![](img/cat-or-fox.png) 
+:::
+
+::: {.column width="40%"}
+- How would you approach it? 
+::: 
+
+::::
+
+## Traditional programming vs. ML {.smaller}
+
+- Traditional programming 
+    - Ideal for problems where solutions can be derived through the direct application of established algorithms in a clear and predictable manner.
+    - Example: finding the shortest distance between two nodes (e.g., Dijkstra’s algorithm or the A* algorithm)
+- Machine learning
+    - Appropriate for scenarios where defining explicit rules or algorithms is challenging due to the complexity or scale of the data.
+    - Example: Distinguishing between images of cats and foxes by training a machine learning model to recognize patterns that differentiate the two.
+
+##  What is ML? 
+
+- ML uses data to build models that identify patterns, make predictions, or generate content.
+- It enables computers to learn from data.
+- No single model is suitable for all situations.
+
+## Supervised learning
+
+- We wish to find a model function $f$ that relates $X$ to $y$.
+- We use the model function to predict targets of new examples. 
+
+![](img/sup-learning.png){.nostretch fig-align="center" width="700px"}
+
+
+# ML vs. rule-based systems vs. human experts 
+
+## iClicker 1.1: ML or not {.smaller}
+
+https://join.iclicker.com/YWOJ 
+
+**Select all of the following statements which are suitable problems for machine learning.**
+
+- (A) Identifying objects within digital images, such as facial recognition in security systems or categorizing images based on content.
+- (B) Providing solutions for common technical issues in software or hardware, where a series of diagnostic steps can be predefined.
+- (C) Determining if individuals meet the necessary criteria for government or financial services based on strict guidelines.
+- (D) Identifying unusual patterns that may indicate fraudulent transactions in banking and finance.
+- (E) Automatically analyzing images from MRIs, CT scans, or X-rays to detect abnormalities like tumors or fractures.
+
+## iClicker 1.2: ML or not {.smaller}
+
+https://join.iclicker.com/YWOJ
+
+**Select all of the following statements which are suitable problems for human experts.**
+
+ - (A) Ensuring that company practices adhere to established regulations and standards, where rules are clearly set out by legal or regulatory bodies.
+ - (B) Predicting user preferences based on past behavior, crucial for services like Netflix or Amazon for suggesting movies or products.
+ - (C) Evaluating legal cases where the context and subtleties of human behavior and law interpretation are crucial.
+ - (D) Making decisions about end-of-life care or consent for surgery where ethical considerations are complex and deeply personal.
+ - (E) Addressing mental health issues where human empathy, understanding, and adaptability are key.
+
+## Summary: When is ML suitable?
+
+- ML excels when the problem involve identifying complex patterns or relationships in large datasets that are difficult for humans to discern manually.
+- Rule-based systems are suitable where clear and deterministic rules can be defined. Good for structured decision making. 
+- Human experts are good with problems which require deep contextual understanding, ethical judgment, creative input, or emotional intelligence.
+
 
 ## Introduction to Machine Learning
 \
@@ -17,16 +96,6 @@ The program learns based on the *features* present in the data, which represent 
 
 ![](img/sup-ML-terminology.png)
 
-
-## Activity 1
-\
-Write one (or several) problems in your area of work where you think Machine Learning could be applied. Try to address the following questions:
-
-* What goal are you trying to accomplish? What would an ideal solution to your problem look like?
-* How would a human solve this problem? What approaches are presently available and utilized?
-* What kind of data is available to you, or might be collected? What features are present in the data?
-
-One of the learning objectives of the workshop will be to determine whether your goal is best addressed using supervised machine learning, inferential statistics, unsupervised learning, deep learning, generative AI, or a non-ML solution.
 
 ## Classification vs. Regression
 \
@@ -52,32 +121,6 @@ One of the learning objectives of the workshop will be to determine whether your
 ## Example: Linear Regression
 \
 ![](img/visualization.png)
-
-Is this inference or prediction?
-
-## Types of Machine Learning
-\
-There are many kinds of machine learning, including
-
-* Supervised Learning (which we'll talk about a lot)
-
-* Unsupervised Learning
-
-* Semi-supervised learning
-
-* Reinforcement Learning
-
-* Generative AI
-
-We will also discuss which problems each type might be best suited for.
-
-## Supervised Learning
-\
-Here the training data is comprised of a set of *features*, and each example comes with a corresponding *target*. The goal is to get a machine learning model to accurately predict the target based on the feature values.
-
-Examples could include spam filtering, face recognition or weather forecasting.
-
-By contrast, in unsupervised learning there are no targets. The goal is instead to uncover underlying patterns. These can be used to provide a concise summary of the data, or group similar examples together. Examples could include customer segmentation, anomaly detection or online recommendation systems (think Netflix).
 
 ## Linear Classifiers
 \

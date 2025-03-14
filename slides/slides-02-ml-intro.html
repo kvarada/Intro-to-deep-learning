@@ -10,7 +10,7 @@
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.5.57">
 
-  <title>Introduction to Machine Learning Workshop – Introduction to Linear Models</title>
+  <title>Introduction to Machine Learning Workshop – Introduction to Machine learning</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -393,11 +393,129 @@
     <div class="slides">
 
 <section id="title-slide" class="quarto-title-block center">
-  <h1 class="title">Introduction to Linear Models</h1>
+  <h1 class="title">Introduction to Machine learning</h1>
 
 <div class="quarto-title-authors">
 </div>
 
+</section>
+<section>
+<section id="what-is-machine-learning-ml" class="title-slide slide level1 center">
+<h1>What is Machine Learning (ML)?</h1>
+
+</section>
+<section id="example-image-classification" class="slide level2 center">
+<h2>Example: Image classification</h2>
+<ul>
+<li>Have you used search in Google Photos? You can search for “my photos of cat” and it will retrieve photos from your libraries containing cats.</li>
+<li>This can be done using <strong>image classification</strong>, which is treated as a supervised learning problem.</li>
+</ul>
+</section>
+<section id="image-classification" class="slide level2 center">
+<h2>Image classification</h2>
+<ul>
+<li>Imagine writing a Python program to differenciate between cats and foxes.</li>
+</ul>
+<div class="columns">
+<div class="column" style="width:60%;">
+<p><img data-src="img/cat-or-fox.png"></p>
+</div><div class="column" style="width:40%;">
+<ul>
+<li>How would you approach it?</li>
+</ul>
+</div></div>
+</section>
+<section id="traditional-programming-vs.-ml" class="slide level2 smaller center">
+<h2>Traditional programming vs.&nbsp;ML</h2>
+<ul>
+<li>Traditional programming
+<ul>
+<li>Ideal for problems where solutions can be derived through the direct application of established algorithms in a clear and predictable manner.</li>
+<li>Example: finding the shortest distance between two nodes (e.g., Dijkstra’s algorithm or the A* algorithm)</li>
+</ul></li>
+<li>Machine learning
+<ul>
+<li>Appropriate for scenarios where defining explicit rules or algorithms is challenging due to the complexity or scale of the data.</li>
+<li>Example: Distinguishing between images of cats and foxes by training a machine learning model to recognize patterns that differentiate the two.</li>
+</ul></li>
+</ul>
+</section>
+<section id="what-is-ml" class="slide level2 center">
+<h2>What is ML?</h2>
+<ul>
+<li>ML uses data to build models that identify patterns, make predictions, or generate content.</li>
+<li>It enables computers to learn from data.</li>
+<li>No single model is suitable for all situations.</li>
+</ul>
+</section>
+<section id="supervised-learning" class="slide level2 center">
+<h2>Supervised learning</h2>
+<ul>
+<li>We wish to find a model function <span class="math inline">\(f\)</span> that relates <span class="math inline">\(X\)</span> to <span class="math inline">\(y\)</span>.</li>
+<li>We use the model function to predict targets of new examples.</li>
+</ul>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="img/sup-learning.png" class="quarto-figure quarto-figure-center" width="700"></p>
+</figure>
+</div>
+</section></section>
+<section>
+<section id="ml-vs.-rule-based-systems-vs.-human-experts" class="title-slide slide level1 center">
+<h1>ML vs.&nbsp;rule-based systems vs.&nbsp;human experts</h1>
+
+</section>
+<section id="iclicker-1.1-ml-or-not" class="slide level2 smaller center">
+<h2>iClicker 1.1: ML or not</h2>
+<p>https://join.iclicker.com/YWOJ</p>
+<p><strong>Select all of the following statements which are suitable problems for machine learning.</strong></p>
+<ul>
+<li><ol type="A">
+<li>Identifying objects within digital images, such as facial recognition in security systems or categorizing images based on content.</li>
+</ol></li>
+<li><ol start="2" type="A">
+<li>Providing solutions for common technical issues in software or hardware, where a series of diagnostic steps can be predefined.</li>
+</ol></li>
+<li><ol start="3" type="A">
+<li>Determining if individuals meet the necessary criteria for government or financial services based on strict guidelines.</li>
+</ol></li>
+<li><ol start="4" type="A">
+<li>Identifying unusual patterns that may indicate fraudulent transactions in banking and finance.</li>
+</ol></li>
+<li><ol start="5" type="A">
+<li>Automatically analyzing images from MRIs, CT scans, or X-rays to detect abnormalities like tumors or fractures.</li>
+</ol></li>
+</ul>
+</section>
+<section id="iclicker-1.2-ml-or-not" class="slide level2 smaller center">
+<h2>iClicker 1.2: ML or not</h2>
+<p>https://join.iclicker.com/YWOJ</p>
+<p><strong>Select all of the following statements which are suitable problems for human experts.</strong></p>
+<ul>
+<li><ol type="A">
+<li>Ensuring that company practices adhere to established regulations and standards, where rules are clearly set out by legal or regulatory bodies.</li>
+</ol></li>
+<li><ol start="2" type="A">
+<li>Predicting user preferences based on past behavior, crucial for services like Netflix or Amazon for suggesting movies or products.</li>
+</ol></li>
+<li><ol start="3" type="A">
+<li>Evaluating legal cases where the context and subtleties of human behavior and law interpretation are crucial.</li>
+</ol></li>
+<li><ol start="4" type="A">
+<li>Making decisions about end-of-life care or consent for surgery where ethical considerations are complex and deeply personal.</li>
+</ol></li>
+<li><ol start="5" type="A">
+<li>Addressing mental health issues where human empathy, understanding, and adaptability are key.</li>
+</ol></li>
+</ul>
+</section>
+<section id="summary-when-is-ml-suitable" class="slide level2 center">
+<h2>Summary: When is ML suitable?</h2>
+<ul>
+<li>ML excels when the problem involve identifying complex patterns or relationships in large datasets that are difficult for humans to discern manually.</li>
+<li>Rule-based systems are suitable where clear and deterministic rules can be defined. Good for structured decision making.</li>
+<li>Human experts are good with problems which require deep contextual understanding, ethical judgment, creative input, or emotional intelligence.</li>
+</ul>
 </section>
 <section id="introduction-to-machine-learning" class="slide level2 center">
 <h2>Introduction to Machine Learning</h2>
@@ -410,17 +528,6 @@ Machine Learning uses computer programs to digest and accurately model data. Aft
 <p>&nbsp;</p>
 
 <img data-src="img/sup-ML-terminology.png" class="r-stretch"></section>
-<section id="activity-1" class="slide level2 center">
-<h2>Activity 1</h2>
-<p><br>
-Write one (or several) problems in your area of work where you think Machine Learning could be applied. Try to address the following questions:</p>
-<ul>
-<li>What goal are you trying to accomplish? What would an ideal solution to your problem look like?</li>
-<li>How would a human solve this problem? What approaches are presently available and utilized?</li>
-<li>What kind of data is available to you, or might be collected? What features are present in the data?</li>
-</ul>
-<p>One of the learning objectives of the workshop will be to determine whether your goal is best addressed using supervised machine learning, inferential statistics, unsupervised learning, deep learning, generative AI, or a non-ML solution.</p>
-</section>
 <section id="classification-vs.-regression" class="slide level2 center">
 <h2>Classification vs.&nbsp;Regression</h2>
 <p><br>
@@ -449,27 +556,6 @@ Write one (or several) problems in your area of work where you think Machine Lea
 <h2>Example: Linear Regression</h2>
 <p><br>
 <img data-src="img/visualization.png"></p>
-<p>Is this inference or prediction?</p>
-</section>
-<section id="types-of-machine-learning" class="slide level2 center">
-<h2>Types of Machine Learning</h2>
-<p><br>
-There are many kinds of machine learning, including</p>
-<ul>
-<li><p>Supervised Learning (which we’ll talk about a lot)</p></li>
-<li><p>Unsupervised Learning</p></li>
-<li><p>Semi-supervised learning</p></li>
-<li><p>Reinforcement Learning</p></li>
-<li><p>Generative AI</p></li>
-</ul>
-<p>We will also discuss which problems each type might be best suited for.</p>
-</section>
-<section id="supervised-learning" class="slide level2 center">
-<h2>Supervised Learning</h2>
-<p><br>
-Here the training data is comprised of a set of <em>features</em>, and each example comes with a corresponding <em>target</em>. The goal is to get a machine learning model to accurately predict the target based on the feature values.</p>
-<p>Examples could include spam filtering, face recognition or weather forecasting.</p>
-<p>By contrast, in unsupervised learning there are no targets. The goal is instead to uncover underlying patterns. These can be used to provide a concise summary of the data, or group similar examples together. Examples could include customer segmentation, anomaly detection or online recommendation systems (think Netflix).</p>
 </section>
 <section id="linear-classifiers" class="slide level2 center">
 <h2>Linear Classifiers</h2>
@@ -492,11 +578,11 @@ Here the training data is comprised of a set of <em>features</em>, and each exam
 <h2>Sentiment Analysis: An Example</h2>
 <p><br>
 Let us attempt to use logistic regression to do sentiment analysis on a database of IMDB reviews. The database is available <a href="https://www.kaggle.com/datasets/lakshmi25npathi/imdb-dataset-of-50k-movie-reviews?resource=download">here</a>.</p>
-<div id="9d7aa582" class="cell" data-execution_count="2">
+<div id="cb3d968f" class="cell" data-execution_count="2">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a></a>imdb_df <span class="op">=</span> pd.read_csv(<span class="st">"data/imdb_master.csv"</span>, encoding<span class="op">=</span><span class="st">"ISO-8859-1"</span>)</span>
 <span id="cb1-2"><a></a>imdb_df.rename(columns<span class="op">=</span>{<span class="st">"sentiment"</span>: <span class="st">"label"</span>}, inplace <span class="op">=</span> <span class="va">True</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div id="23ec0bce" class="cell" data-execution_count="3">
+<div id="a59d00fc" class="cell" data-execution_count="3">
 <div class="cell-output cell-output-display" data-execution_count="3">
 <div>
 <style scoped="">
@@ -565,7 +651,7 @@ To create features that logistic regression can use, we will represent these rev
 <h2>Bag of Words</h2>
 <p><br>
 Notice that the result is a sparse matrix. Most reviews contain only a small number of words.</p>
-<div id="8055ffb1" class="cell" data-execution_count="5">
+<div id="20ce8d9f" class="cell" data-execution_count="5">
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a></a>vec <span class="op">=</span> CountVectorizer(stop_words<span class="op">=</span><span class="st">"english"</span>)</span>
 <span id="cb2-2"><a></a>bow <span class="op">=</span> vec.fit_transform(X_train)</span>
 <span id="cb2-3"><a></a>bow</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -575,7 +661,7 @@ Notice that the result is a sparse matrix. Most reviews contain only a small num
 </div>
 </div>
 <p>There are a total of 38867 “words” among the reviews. Here are some of them:</p>
-<div id="e24104e1" class="cell" data-execution_count="6">
+<div id="626e6a59" class="cell" data-execution_count="6">
 <div class="cell-output cell-output-display" data-execution_count="6">
 <pre><code>array(['00', 'affection', 'apprehensive', 'barbara', 'blore',
        'businessman', 'chatterjee', 'commanding', 'cramped', 'defining',
@@ -591,7 +677,7 @@ Notice that the result is a sparse matrix. Most reviews contain only a small num
 <section id="checking-the-class-counts" class="slide level2 center">
 <h2>Checking the class counts</h2>
 <p>Let us see how many reviews are positive, and how many are negative. &nbsp;</p>
-<div id="f20ce5eb" class="cell" data-execution_count="7">
+<div id="f0b92e61" class="cell" data-execution_count="7">
 <div class="sourceCode cell-code" id="cb5"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a></a>y_train.value_counts()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="7">
 <pre><code>label
@@ -604,7 +690,7 @@ Name: count, dtype: int64</code></pre>
 </p>
 <p>The dataset looks pretty balanced, so a classifier predicting at random would at best guess about 50% correctly.</p>
 <p>We will not train our model.</p>
-</section>
+</section></section>
 <section>
 <section id="testing-performance" class="title-slide slide level1 center">
 <h1>Testing Performance</h1>
@@ -615,7 +701,7 @@ Name: count, dtype: int64</code></pre>
 <p><br>
 </p>
 <p>Let’s see how the model performs after training.</p>
-<div id="aeb475c2" class="cell" data-execution_count="8">
+<div id="50890272" class="cell" data-execution_count="8">
 <div class="cell-output cell-output-display" data-execution_count="8">
 <div>
 <style scoped="">
@@ -645,36 +731,36 @@ Name: count, dtype: int64</code></pre>
 <tbody>
 <tr class="odd">
 <td data-quarto-table-cell-role="th">0</td>
-<td>0.416480</td>
-<td>0.059093</td>
+<td>0.404817</td>
+<td>0.057180</td>
 <td>0.828</td>
 <td>0.99975</td>
 </tr>
 <tr class="even">
 <td data-quarto-table-cell-role="th">1</td>
-<td>0.428303</td>
-<td>0.062713</td>
+<td>0.413377</td>
+<td>0.060267</td>
 <td>0.830</td>
 <td>0.99975</td>
 </tr>
 <tr class="odd">
 <td data-quarto-table-cell-role="th">2</td>
-<td>0.433582</td>
-<td>0.061929</td>
+<td>0.423920</td>
+<td>0.059358</td>
 <td>0.848</td>
 <td>0.99975</td>
 </tr>
 <tr class="even">
 <td data-quarto-table-cell-role="th">3</td>
-<td>0.417509</td>
-<td>0.058902</td>
+<td>0.406662</td>
+<td>0.057710</td>
 <td>0.833</td>
 <td>1.00000</td>
 </tr>
 <tr class="odd">
 <td data-quarto-table-cell-role="th">4</td>
-<td>0.423331</td>
-<td>0.060688</td>
+<td>0.401656</td>
+<td>0.058953</td>
 <td>0.840</td>
 <td>0.99975</td>
 </tr>
@@ -706,7 +792,7 @@ We’re able to predict with roughly 84% accuracy on validation sets. Looks like
 <p><br>
 </p>
 <p>Let’s see what associations our model learned.</p>
-<div id="334de9b6" class="cell" data-execution_count="10">
+<div id="964db1aa" class="cell" data-execution_count="10">
 <div class="cell-output cell-output-display" data-execution_count="10">
 <div>
 <style scoped="">
@@ -733,52 +819,52 @@ We’re able to predict with roughly 84% accuracy on validation sets. Looks like
 <tbody>
 <tr class="odd">
 <td data-quarto-table-cell-role="th">excellent</td>
-<td>5.532216</td>
+<td>1.119168</td>
 </tr>
 <tr class="even">
-<td data-quarto-table-cell-role="th">perfect</td>
-<td>5.042664</td>
-</tr>
-<tr class="odd">
 <td data-quarto-table-cell-role="th">surprised</td>
-<td>5.023637</td>
-</tr>
-<tr class="even">
-<td data-quarto-table-cell-role="th">amazing</td>
-<td>4.537878</td>
+<td>1.030143</td>
 </tr>
 <tr class="odd">
+<td data-quarto-table-cell-role="th">perfect</td>
+<td>0.994759</td>
+</tr>
+<tr class="even">
 <td data-quarto-table-cell-role="th">wonderful</td>
-<td>4.504596</td>
+<td>0.980567</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">amazing</td>
+<td>0.933009</td>
 </tr>
 <tr class="even">
 <td data-quarto-table-cell-role="th">...</td>
 <td>...</td>
 </tr>
 <tr class="odd">
-<td data-quarto-table-cell-role="th">waste</td>
-<td>-5.535440</td>
+<td data-quarto-table-cell-role="th">boring</td>
+<td>-1.130079</td>
 </tr>
 <tr class="even">
-<td data-quarto-table-cell-role="th">boring</td>
-<td>-5.811034</td>
+<td data-quarto-table-cell-role="th">terrible</td>
+<td>-1.148760</td>
 </tr>
 <tr class="odd">
-<td data-quarto-table-cell-role="th">terrible</td>
-<td>-6.137480</td>
+<td data-quarto-table-cell-role="th">waste</td>
+<td>-1.152334</td>
 </tr>
 <tr class="even">
 <td data-quarto-table-cell-role="th">awful</td>
-<td>-7.050576</td>
+<td>-1.402264</td>
 </tr>
 <tr class="odd">
 <td data-quarto-table-cell-role="th">worst</td>
-<td>-8.221718</td>
+<td>-1.738195</td>
 </tr>
 </tbody>
 </table>
 
-<p>25003 rows × 1 columns</p>
+<p>33535 rows × 1 columns</p>
 </div>
 </div>
 </div>
@@ -789,7 +875,7 @@ We’re able to predict with roughly 84% accuracy on validation sets. Looks like
 <p><br>
 </p>
 <p>They make sense! Let’s visualize the 20 most important features.</p>
-<div id="dc8be2a7" class="cell" data-execution_count="11">
+<div id="a9ffc673" class="cell" data-execution_count="11">
 <div class="cell-output cell-output-display">
 <div>
 <figure>
@@ -805,14 +891,14 @@ We’re able to predict with roughly 84% accuracy on validation sets. Looks like
 </p>
 <p>Finally, let’s try predicting on some new examples.<br>
 </p>
-<div id="fc4795d2" class="cell" data-execution_count="12">
+<div id="6bfc25b1" class="cell" data-execution_count="12">
 <div class="cell-output cell-output-display" data-execution_count="12">
 <pre><code>['It got a bit boring at times but the direction was excellent and the acting was flawless. Overall I enjoyed the movie and I highly recommend it!',
  'The plot was shallower than a kiddie pool in a drought, but hey, at least we now know emojis should stick to texting and avoid the big screen.']</code></pre>
 </div>
 </div>
 <p>Here are the model predictions:</p>
-<div id="e105373f" class="cell" data-execution_count="13">
+<div id="62fab417" class="cell" data-execution_count="13">
 <div class="cell-output cell-output-display" data-execution_count="13">
 <pre><code>array(['positive', 'negative'], dtype=object)</code></pre>
 </div>
@@ -824,7 +910,7 @@ We’re able to predict with roughly 84% accuracy on validation sets. Looks like
 <section id="understanding-predictions" class="slide level2 center">
 <h2>Understanding Predictions</h2>
 <div class="scroll-container" style="overflow-y: scroll; height: 400px;">
-<div id="5e0ef73d" class="cell" data-execution_count="14">
+<div id="322a6691" class="cell" data-execution_count="14">
 <div class="cell-output cell-output-stdout">
 <pre><code>It got a bit boring at times but the direction was excellent and the acting was flawless. Overall I enjoyed the movie and I highly recommend it!</code></pre>
 </div>

@@ -1,176 +1,211 @@
 [
   {
+    "objectID": "slides/slides-02-ml-intro.html#example-image-classification",
+    "href": "slides/slides-02-ml-intro.html#example-image-classification",
+    "title": "Introduction to Machine learning",
+    "section": "Example: Image classification",
+    "text": "Example: Image classification\n\nHave you used search in Google Photos? You can search for “my photos of cat” and it will retrieve photos from your libraries containing cats.\nThis can be done using image classification, which is treated as a supervised learning problem."
+  },
+  {
+    "objectID": "slides/slides-02-ml-intro.html#image-classification",
+    "href": "slides/slides-02-ml-intro.html#image-classification",
+    "title": "Introduction to Machine learning",
+    "section": "Image classification",
+    "text": "Image classification\n\nImagine writing a Python program to differenciate between cats and foxes.\n\n\n\n\n\n\nHow would you approach it?"
+  },
+  {
+    "objectID": "slides/slides-02-ml-intro.html#traditional-programming-vs.-ml",
+    "href": "slides/slides-02-ml-intro.html#traditional-programming-vs.-ml",
+    "title": "Introduction to Machine learning",
+    "section": "Traditional programming vs. ML",
+    "text": "Traditional programming vs. ML\n\nTraditional programming\n\nIdeal for problems where solutions can be derived through the direct application of established algorithms in a clear and predictable manner.\nExample: finding the shortest distance between two nodes (e.g., Dijkstra’s algorithm or the A* algorithm)\n\nMachine learning\n\nAppropriate for scenarios where defining explicit rules or algorithms is challenging due to the complexity or scale of the data.\nExample: Distinguishing between images of cats and foxes by training a machine learning model to recognize patterns that differentiate the two."
+  },
+  {
+    "objectID": "slides/slides-02-ml-intro.html#what-is-ml",
+    "href": "slides/slides-02-ml-intro.html#what-is-ml",
+    "title": "Introduction to Machine learning",
+    "section": "What is ML?",
+    "text": "What is ML?\n\nML uses data to build models that identify patterns, make predictions, or generate content.\nIt enables computers to learn from data.\nNo single model is suitable for all situations."
+  },
+  {
+    "objectID": "slides/slides-02-ml-intro.html#supervised-learning",
+    "href": "slides/slides-02-ml-intro.html#supervised-learning",
+    "title": "Introduction to Machine learning",
+    "section": "Supervised learning",
+    "text": "Supervised learning\n\nWe wish to find a model function \\(f\\) that relates \\(X\\) to \\(y\\).\nWe use the model function to predict targets of new examples."
+  },
+  {
+    "objectID": "slides/slides-02-ml-intro.html#iclicker-1.1-ml-or-not",
+    "href": "slides/slides-02-ml-intro.html#iclicker-1.1-ml-or-not",
+    "title": "Introduction to Machine learning",
+    "section": "iClicker 1.1: ML or not",
+    "text": "iClicker 1.1: ML or not\nhttps://join.iclicker.com/YWOJ\nSelect all of the following statements which are suitable problems for machine learning.\n\n\nIdentifying objects within digital images, such as facial recognition in security systems or categorizing images based on content.\n\n\nProviding solutions for common technical issues in software or hardware, where a series of diagnostic steps can be predefined.\n\n\nDetermining if individuals meet the necessary criteria for government or financial services based on strict guidelines.\n\n\nIdentifying unusual patterns that may indicate fraudulent transactions in banking and finance.\n\n\nAutomatically analyzing images from MRIs, CT scans, or X-rays to detect abnormalities like tumors or fractures."
+  },
+  {
+    "objectID": "slides/slides-02-ml-intro.html#iclicker-1.2-ml-or-not",
+    "href": "slides/slides-02-ml-intro.html#iclicker-1.2-ml-or-not",
+    "title": "Introduction to Machine learning",
+    "section": "iClicker 1.2: ML or not",
+    "text": "iClicker 1.2: ML or not\nhttps://join.iclicker.com/YWOJ\nSelect all of the following statements which are suitable problems for human experts.\n\n\nEnsuring that company practices adhere to established regulations and standards, where rules are clearly set out by legal or regulatory bodies.\n\n\nPredicting user preferences based on past behavior, crucial for services like Netflix or Amazon for suggesting movies or products.\n\n\nEvaluating legal cases where the context and subtleties of human behavior and law interpretation are crucial.\n\n\nMaking decisions about end-of-life care or consent for surgery where ethical considerations are complex and deeply personal.\n\n\nAddressing mental health issues where human empathy, understanding, and adaptability are key."
+  },
+  {
+    "objectID": "slides/slides-02-ml-intro.html#summary-when-is-ml-suitable",
+    "href": "slides/slides-02-ml-intro.html#summary-when-is-ml-suitable",
+    "title": "Introduction to Machine learning",
+    "section": "Summary: When is ML suitable?",
+    "text": "Summary: When is ML suitable?\n\nML excels when the problem involve identifying complex patterns or relationships in large datasets that are difficult for humans to discern manually.\nRule-based systems are suitable where clear and deterministic rules can be defined. Good for structured decision making.\nHuman experts are good with problems which require deep contextual understanding, ethical judgment, creative input, or emotional intelligence."
+  },
+  {
     "objectID": "slides/slides-02-ml-intro.html#introduction-to-machine-learning",
     "href": "slides/slides-02-ml-intro.html#introduction-to-machine-learning",
-    "title": "Introduction to Linear Models",
+    "title": "Introduction to Machine learning",
     "section": "Introduction to Machine Learning",
     "text": "Introduction to Machine Learning\n\nMachine Learning uses computer programs to digest and accurately model data. After training on the data, a program can be used to extract hidden patterns, make predictions in new situations or generate novel content.\nThe program learns based on the features present in the data, which represent the information we have about each example."
   },
   {
     "objectID": "slides/slides-02-ml-intro.html#introduction-to-machine-learning-1",
     "href": "slides/slides-02-ml-intro.html#introduction-to-machine-learning-1",
-    "title": "Introduction to Linear Models",
+    "title": "Introduction to Machine learning",
     "section": "Introduction to Machine Learning",
     "text": "Introduction to Machine Learning"
   },
   {
-    "objectID": "slides/slides-02-ml-intro.html#activity-1",
-    "href": "slides/slides-02-ml-intro.html#activity-1",
-    "title": "Introduction to Linear Models",
-    "section": "Activity 1",
-    "text": "Activity 1\n\nWrite one (or several) problems in your area of work where you think Machine Learning could be applied. Try to address the following questions:\n\nWhat goal are you trying to accomplish? What would an ideal solution to your problem look like?\nHow would a human solve this problem? What approaches are presently available and utilized?\nWhat kind of data is available to you, or might be collected? What features are present in the data?\n\nOne of the learning objectives of the workshop will be to determine whether your goal is best addressed using supervised machine learning, inferential statistics, unsupervised learning, deep learning, generative AI, or a non-ML solution."
-  },
-  {
     "objectID": "slides/slides-02-ml-intro.html#classification-vs.-regression",
     "href": "slides/slides-02-ml-intro.html#classification-vs.-regression",
-    "title": "Introduction to Linear Models",
+    "title": "Introduction to Machine learning",
     "section": "Classification vs. Regression",
     "text": "Classification vs. Regression"
   },
   {
     "objectID": "slides/slides-02-ml-intro.html#measuring-performance",
     "href": "slides/slides-02-ml-intro.html#measuring-performance",
-    "title": "Introduction to Linear Models",
+    "title": "Introduction to Machine learning",
     "section": "Measuring Performance",
     "text": "Measuring Performance\n\n\n\nPerformance on classification tasks can be measured based on the accuracy of the model’s predictions.\nPerformance on a regression task can be measured based on error. Mean squared error is one choice, but there are many others!"
   },
   {
     "objectID": "slides/slides-02-ml-intro.html#inference-vs.-prediction",
     "href": "slides/slides-02-ml-intro.html#inference-vs.-prediction",
-    "title": "Introduction to Linear Models",
+    "title": "Introduction to Machine learning",
     "section": "Inference vs. Prediction",
     "text": "Inference vs. Prediction\n\n\n\nInference is the use of a model to infer a relationship between features (independent variables) and targets (independent variables).\nPrediction is the use of a model to predict the target value for a new example not seen in training."
   },
   {
     "objectID": "slides/slides-02-ml-intro.html#example-linear-regression",
     "href": "slides/slides-02-ml-intro.html#example-linear-regression",
-    "title": "Introduction to Linear Models",
+    "title": "Introduction to Machine learning",
     "section": "Example: Linear Regression",
-    "text": "Example: Linear Regression\n\n\nIs this inference or prediction?"
-  },
-  {
-    "objectID": "slides/slides-02-ml-intro.html#types-of-machine-learning",
-    "href": "slides/slides-02-ml-intro.html#types-of-machine-learning",
-    "title": "Introduction to Linear Models",
-    "section": "Types of Machine Learning",
-    "text": "Types of Machine Learning\n\nThere are many kinds of machine learning, including\n\nSupervised Learning (which we’ll talk about a lot)\nUnsupervised Learning\nSemi-supervised learning\nReinforcement Learning\nGenerative AI\n\nWe will also discuss which problems each type might be best suited for."
-  },
-  {
-    "objectID": "slides/slides-02-ml-intro.html#supervised-learning",
-    "href": "slides/slides-02-ml-intro.html#supervised-learning",
-    "title": "Introduction to Linear Models",
-    "section": "Supervised Learning",
-    "text": "Supervised Learning\n\nHere the training data is comprised of a set of features, and each example comes with a corresponding target. The goal is to get a machine learning model to accurately predict the target based on the feature values.\nExamples could include spam filtering, face recognition or weather forecasting.\nBy contrast, in unsupervised learning there are no targets. The goal is instead to uncover underlying patterns. These can be used to provide a concise summary of the data, or group similar examples together. Examples could include customer segmentation, anomaly detection or online recommendation systems (think Netflix)."
+    "text": "Example: Linear Regression"
   },
   {
     "objectID": "slides/slides-02-ml-intro.html#linear-classifiers",
     "href": "slides/slides-02-ml-intro.html#linear-classifiers",
-    "title": "Introduction to Linear Models",
+    "title": "Introduction to Machine learning",
     "section": "Linear Classifiers",
     "text": "Linear Classifiers\n\n\nWe can also build linear models for classification tasks. The idea is to convert the output from an arbitrary number to a number between 0 and 1, and treat it like a “probability”.\nIn logistic regression, we squash the output using the sigmoid function and then adjust parameters (in training) to find the choice that makes the data “most likely”."
   },
   {
     "objectID": "slides/slides-02-ml-intro.html#linear-classifiers-1",
     "href": "slides/slides-02-ml-intro.html#linear-classifiers-1",
-    "title": "Introduction to Linear Models",
+    "title": "Introduction to Machine learning",
     "section": "Linear Classifiers",
     "text": "Linear Classifiers\n\nCan you guess what this dataset is?"
   },
   {
     "objectID": "slides/slides-02-ml-intro.html#linear-classifiers-2",
     "href": "slides/slides-02-ml-intro.html#linear-classifiers-2",
-    "title": "Introduction to Linear Models",
+    "title": "Introduction to Machine learning",
     "section": "Linear Classifiers",
     "text": "Linear Classifiers\n\nLogistic Regression predicts a linear decision boundary."
   },
   {
     "objectID": "slides/slides-02-ml-intro.html#sentiment-analysis-an-example",
     "href": "slides/slides-02-ml-intro.html#sentiment-analysis-an-example",
-    "title": "Introduction to Linear Models",
+    "title": "Introduction to Machine learning",
     "section": "Sentiment Analysis: An Example",
     "text": "Sentiment Analysis: An Example\n\nLet us attempt to use logistic regression to do sentiment analysis on a database of IMDB reviews. The database is available here.\n\nimdb_df = pd.read_csv(\"data/imdb_master.csv\", encoding=\"ISO-8859-1\")\nimdb_df.rename(columns={\"sentiment\": \"label\"}, inplace = True)\n\n\n\n\n\n\n\n\n\n\nreview\nlabel\n\n\n\n\n0\nOne of the other reviewers has mentioned that ...\npositive\n\n\n1\nA wonderful little production. &lt;br /&gt;&lt;br /&gt;The...\npositive\n\n\n2\nI thought this was a wonderful way to spend ti...\npositive\n\n\n3\nBasically there's a family where a little boy ...\nnegative\n\n\n4\nPetter Mattei's \"Love in the Time of Money\" is...\npositive\n\n\n\n\n\n\n\nWe will use only about 10% of the dataset for training (to speed things up)"
   },
   {
     "objectID": "slides/slides-02-ml-intro.html#bag-of-words",
     "href": "slides/slides-02-ml-intro.html#bag-of-words",
-    "title": "Introduction to Linear Models",
+    "title": "Introduction to Machine learning",
     "section": "Bag of Words",
     "text": "Bag of Words\n\nTo create features that logistic regression can use, we will represent these reviews via a “bag of words” strategy.\nWe create a new feature for every word that appears in the dataset. Then, if a review contains that word exactly once, the corresponding feature gets a value of 1 for that review. If the word appears four times, the feature gets a value of 4. If the word is not present, it’s marked as 0."
   },
   {
     "objectID": "slides/slides-02-ml-intro.html#bag-of-words-1",
     "href": "slides/slides-02-ml-intro.html#bag-of-words-1",
-    "title": "Introduction to Linear Models",
+    "title": "Introduction to Machine learning",
     "section": "Bag of Words",
     "text": "Bag of Words\n\nNotice that the result is a sparse matrix. Most reviews contain only a small number of words.\n\nvec = CountVectorizer(stop_words=\"english\")\nbow = vec.fit_transform(X_train)\nbow\n\n&lt;Compressed Sparse Row sparse matrix of dtype 'int64'\n    with 439384 stored elements and shape (5000, 38867)&gt;\n\n\nThere are a total of 38867 “words” among the reviews. Here are some of them:\n\n\narray(['00', 'affection', 'apprehensive', 'barbara', 'blore',\n       'businessman', 'chatterjee', 'commanding', 'cramped', 'defining',\n       'displaced', 'edie', 'evolving', 'fingertips', 'gaffers',\n       'gravitas', 'heist', 'iliad', 'investment', 'kidnappee',\n       'licentious', 'malã', 'mice', 'museum', 'obsessiveness',\n       'parapsychologist', 'plasters', 'property', 'reclined',\n       'ridiculous', 'sayid', 'shivers', 'sohail', 'stomaches', 'syrupy',\n       'tolerance', 'unbidden', 'verneuil', 'wilcox'], dtype=object)"
   },
   {
     "objectID": "slides/slides-02-ml-intro.html#checking-the-class-counts",
     "href": "slides/slides-02-ml-intro.html#checking-the-class-counts",
-    "title": "Introduction to Linear Models",
+    "title": "Introduction to Machine learning",
     "section": "Checking the class counts",
     "text": "Checking the class counts\nLet us see how many reviews are positive, and how many are negative.  \n\ny_train.value_counts()\n\nlabel\npositive    2517\nnegative    2483\nName: count, dtype: int64\n\n\n\n\nThe dataset looks pretty balanced, so a classifier predicting at random would at best guess about 50% correctly.\nWe will not train our model."
   },
   {
     "objectID": "slides/slides-02-ml-intro.html#testing-performance-1",
     "href": "slides/slides-02-ml-intro.html#testing-performance-1",
-    "title": "Introduction to Linear Models",
+    "title": "Introduction to Machine learning",
     "section": "Testing Performance",
-    "text": "Testing Performance\n\n\nLet’s see how the model performs after training.\n\n\n\n\n\n\n\n\n\nfit_time\nscore_time\ntest_score\ntrain_score\n\n\n\n\n0\n0.416480\n0.059093\n0.828\n0.99975\n\n\n1\n0.428303\n0.062713\n0.830\n0.99975\n\n\n2\n0.433582\n0.061929\n0.848\n0.99975\n\n\n3\n0.417509\n0.058902\n0.833\n1.00000\n\n\n4\n0.423331\n0.060688\n0.840\n0.99975\n\n\n\n\n\n\n\n\nWe’re able to predict with roughly 84% accuracy on validation sets. Looks like our model learned something!"
+    "text": "Testing Performance\n\n\nLet’s see how the model performs after training.\n\n\n\n\n\n\n\n\n\nfit_time\nscore_time\ntest_score\ntrain_score\n\n\n\n\n0\n0.404817\n0.057180\n0.828\n0.99975\n\n\n1\n0.413377\n0.060267\n0.830\n0.99975\n\n\n2\n0.423920\n0.059358\n0.848\n0.99975\n\n\n3\n0.406662\n0.057710\n0.833\n1.00000\n\n\n4\n0.401656\n0.058953\n0.840\n0.99975\n\n\n\n\n\n\n\n\nWe’re able to predict with roughly 84% accuracy on validation sets. Looks like our model learned something!"
   },
   {
     "objectID": "slides/slides-02-ml-intro.html#tuning-hyperparameters",
     "href": "slides/slides-02-ml-intro.html#tuning-hyperparameters",
-    "title": "Introduction to Linear Models",
+    "title": "Introduction to Machine learning",
     "section": "Tuning hyperparameters",
     "text": "Tuning hyperparameters\n\n\nHowever, the training scores are perfect (and higher than validation scores) so our model is likely overfitting.\nMaybe it just memorized some rare words, each appearing only in one review, and associated these with the review’s label. We could try reducing the size of our dictionary to prevent this."
   },
   {
     "objectID": "slides/slides-02-ml-intro.html#tuning-hyperparameters-1",
     "href": "slides/slides-02-ml-intro.html#tuning-hyperparameters-1",
-    "title": "Introduction to Linear Models",
+    "title": "Introduction to Machine learning",
     "section": "Tuning hyperparameters",
     "text": "Tuning hyperparameters\n\n\nThere are many tools available to automate the search for good hyperparameters. These can make our life easy, but there is always the danger of optimization bias in the results."
   },
   {
     "objectID": "slides/slides-02-ml-intro.html#investigating-the-model",
     "href": "slides/slides-02-ml-intro.html#investigating-the-model",
-    "title": "Introduction to Linear Models",
+    "title": "Introduction to Machine learning",
     "section": "Investigating the model",
-    "text": "Investigating the model\n\n\n\nLet’s see what associations our model learned.\n\n\n\n\n\n\n\n\n\nCoefficient\n\n\n\n\nexcellent\n5.532216\n\n\nperfect\n5.042664\n\n\nsurprised\n5.023637\n\n\namazing\n4.537878\n\n\nwonderful\n4.504596\n\n\n...\n...\n\n\nwaste\n-5.535440\n\n\nboring\n-5.811034\n\n\nterrible\n-6.137480\n\n\nawful\n-7.050576\n\n\nworst\n-8.221718\n\n\n\n\n25003 rows × 1 columns"
+    "text": "Investigating the model\n\n\n\nLet’s see what associations our model learned.\n\n\n\n\n\n\n\n\n\nCoefficient\n\n\n\n\nexcellent\n1.119168\n\n\nsurprised\n1.030143\n\n\nperfect\n0.994759\n\n\nwonderful\n0.980567\n\n\namazing\n0.933009\n\n\n...\n...\n\n\nboring\n-1.130079\n\n\nterrible\n-1.148760\n\n\nwaste\n-1.152334\n\n\nawful\n-1.402264\n\n\nworst\n-1.738195\n\n\n\n\n33535 rows × 1 columns"
   },
   {
     "objectID": "slides/slides-02-ml-intro.html#investigating-the-model-1",
     "href": "slides/slides-02-ml-intro.html#investigating-the-model-1",
-    "title": "Introduction to Linear Models",
+    "title": "Introduction to Machine learning",
     "section": "Investigating the model",
     "text": "Investigating the model\n\n\nThey make sense! Let’s visualize the 20 most important features."
   },
   {
     "objectID": "slides/slides-02-ml-intro.html#making-predictions",
     "href": "slides/slides-02-ml-intro.html#making-predictions",
-    "title": "Introduction to Linear Models",
+    "title": "Introduction to Machine learning",
     "section": "Making Predictions",
     "text": "Making Predictions\n\n\nFinally, let’s try predicting on some new examples.\n\n\n\n['It got a bit boring at times but the direction was excellent and the acting was flawless. Overall I enjoyed the movie and I highly recommend it!',\n 'The plot was shallower than a kiddie pool in a drought, but hey, at least we now know emojis should stick to texting and avoid the big screen.']\n\n\nHere are the model predictions:\n\n\narray(['positive', 'negative'], dtype=object)\n\n\n\n\nLet’s see which vocabulary words were present in the first review, and how they contributed to the classification."
   },
   {
     "objectID": "slides/slides-02-ml-intro.html#understanding-predictions",
     "href": "slides/slides-02-ml-intro.html#understanding-predictions",
-    "title": "Introduction to Linear Models",
+    "title": "Introduction to Machine learning",
     "section": "Understanding Predictions",
     "text": "Understanding Predictions\n\n\n\nIt got a bit boring at times but the direction was excellent and the acting was flawless. Overall I enjoyed the movie and I highly recommend it!"
   },
   {
     "objectID": "slides/slides-02-ml-intro.html#summary",
     "href": "slides/slides-02-ml-intro.html#summary",
-    "title": "Introduction to Linear Models",
+    "title": "Introduction to Machine learning",
     "section": "Summary",
     "text": "Summary\n\n\nThe bag-of-words representation was very simple– we only counted which words appeared in which reviews. There was no attempt to maintain syntactical or grammatical structure or to study correlations between words.\nWe also trained on just 5000 examples. Nevertheless, our model performs quite well."
   },
   {
     "objectID": "slides/slides-02-ml-intro.html#linear-models",
     "href": "slides/slides-02-ml-intro.html#linear-models",
-    "title": "Introduction to Linear Models",
+    "title": "Introduction to Machine learning",
     "section": "Linear Models",
     "text": "Linear Models\n\n\nPros:\n\nEasy to train and to interpret\nWidely applicable despite some strong assumptions\nIf you have a regression task, check whether a linear regression is already good enough! If you have a classification task, logistic regression is a go-to first option.\n\nCons:\n\nStrong assumptions\nLinear decision boundaries for classifiers\nCorrelated features can cause problems"
   },
