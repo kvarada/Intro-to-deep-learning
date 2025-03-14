@@ -6,6 +6,28 @@ format:
       center: true
 ---
 
+## Which cat is AI-generated?
+
+:::: {.columns}
+::: {.column width="60%"}
+
+![](img/ai-or-not-cat.png)
+
+[Source](https://thinktan.net/are-you-sure-this-photo-is-not-ai-generated/)
+:::
+
+::: {.column width="40%"}
+
+- Which one do you think is AI-generated?
+    - A
+    - B
+    - Both
+    - None
+:::
+:::: 
+
+
+
 # What is Machine Learning (ML)?
 
 ## Example: Image classification
@@ -15,8 +37,6 @@ format:
 
 ## Image classification
 
-- Imagine writing a Python program to differenciate between cats and foxes.  
-
 :::: {.columns}
 
 ::: {.column width="60%"}
@@ -24,6 +44,7 @@ format:
 :::
 
 ::: {.column width="40%"}
+- Imagine writing a Python program to differenciate between cats and foxes.  
 - How would you approach it? 
 ::: 
 
