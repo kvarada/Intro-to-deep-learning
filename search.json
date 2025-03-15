@@ -28,18 +28,18 @@
     "text": "Neural networks\n\n\n\nNeural networks are perfect for these types of problems where local structures are important.\nA significant advancement in image classification was the application of convolutional neural networks (ConvNets or CNNs) to this problem.\n\nImageNet Classification with Deep Convolutional Neural Networks\nAchieved a winning test error rate of 15.3%, compared to 26.2% achieved by the second-best entry in the ILSVRC-2012 competition.\n\nLet’s go over the basics of a neural network."
   },
   {
+    "objectID": "slides/slides-03-deep-learning.html#a-graphical-view-of-a-linear-model",
+    "href": "slides/slides-03-deep-learning.html#a-graphical-view-of-a-linear-model",
+    "title": "Deep Learning",
+    "section": "A graphical view of a linear model",
+    "text": "A graphical view of a linear model\n\n\n\n\n\n\n\n\n\n\n\n\n\nRemember this graphical view of linear models?\nWe have 4 features: x[0], x[1], x[2], x[3]\nThe output is calculated as \\(y = x[0]w[0] + x[1]w[1] + x[2]w[2] + x[3]w[3]\\)\nFor simplicity, we are ignoring the bias term."
+  },
+  {
     "objectID": "slides/slides-03-deep-learning.html#introduction-to-neural-networks",
     "href": "slides/slides-03-deep-learning.html#introduction-to-neural-networks",
     "title": "Deep Learning",
     "section": "Introduction to neural networks",
-    "text": "Introduction to neural networks\n\n\n\nNeural networks can be viewed a generalization of linear models where we apply a series of transformations.\nIn the following graphical representation of a linear model, we have 4 features: x[0], x[1], x[2], x[3]\nThe output is calculated as \\(y = x[0]w[0] + x[1]w[1] + x[2]w[2] + x[3]w[3]\\)\nFor simplicity, we are ignoring the bias term."
-  },
-  {
-    "objectID": "slides/slides-03-deep-learning.html#adding-a-layer-of-transformations",
-    "href": "slides/slides-03-deep-learning.html#adding-a-layer-of-transformations",
-    "title": "Deep Learning",
-    "section": "Adding a layer of transformations",
-    "text": "Adding a layer of transformations\n\n\n\nBelow we are adding one “layer” of transformations in between features and the target.\nWe are repeating the the process of computing the weighted sum multiple times.\n\nThe hidden units (e.g., h[1], h[2], …) represent the intermediate processing steps."
+    "text": "Introduction to neural networks\n\n\n\nNeural networks can be viewed a generalization of linear models where we apply a series of transformations.\nBelow we are adding one “layer” of transformations in between features and the target.\nWe are repeating the the process of computing the weighted sum multiple times.\n\nThe hidden units (e.g., h[1], h[2], …) represent the intermediate processing steps."
   },
   {
     "objectID": "slides/slides-03-deep-learning.html#one-more-layer-of-transformations",
@@ -214,7 +214,7 @@
     "href": "slides/slides-03-deep-learning.html#object-detection-using-yolo",
     "title": "Deep Learning",
     "section": "Object detection using YOLO",
-    "text": "Object detection using YOLO\n\n\nLet’s try this out using a pre-trained model.\n\nfrom ultralytics import YOLO\nmodel = YOLO(\"yolov8n.pt\")  # pretrained YOLOv8n model\n\nyolo_input = \"data/yolo_test/3356700488_183566145b.jpg\"\nyolo_result = \"data/yolo_result.jpg\"\n# Run batched inference on a list of images\nresult = model(yolo_input)  # return a list of Results objects\nresult[0].save(filename=yolo_result)\n\n\nimage 1/1 /Users/kvarada/EL/workshops/Intro-to-deep-learning/website/slides/data/yolo_test/3356700488_183566145b.jpg: 512x640 4 persons, 2 cars, 1 stop sign, 59.8ms\nSpeed: 2.0ms preprocess, 59.8ms inference, 6.3ms postprocess per image at shape (1, 3, 512, 640)\n\n\n'data/yolo_result.jpg'"
+    "text": "Object detection using YOLO\n\n\nLet’s try this out using a pre-trained model.\n\nfrom ultralytics import YOLO\nmodel = YOLO(\"yolov8n.pt\")  # pretrained YOLOv8n model\n\nyolo_input = \"data/yolo_test/3356700488_183566145b.jpg\"\nyolo_result = \"data/yolo_result.jpg\"\n# Run batched inference on a list of images\nresult = model(yolo_input)  # return a list of Results objects\nresult[0].save(filename=yolo_result)\n\n\nimage 1/1 /Users/kvarada/EL/workshops/Intro-to-deep-learning/website/slides/data/yolo_test/3356700488_183566145b.jpg: 512x640 4 persons, 2 cars, 1 stop sign, 61.1ms\nSpeed: 2.4ms preprocess, 61.1ms inference, 7.4ms postprocess per image at shape (1, 3, 512, 640)\n\n\n'data/yolo_result.jpg'"
   },
   {
     "objectID": "slides/slides-03-deep-learning.html#object-detection-output",
@@ -379,13 +379,6 @@
     "text": "Welcome to the workshop!\n\n\n\nFind a seat of your choice.\nTake 15 seconds to introduce yourself to your neighbour."
   },
   {
-    "objectID": "slides/slides-01-intro.html#qr-code",
-    "href": "slides/slides-01-intro.html#qr-code",
-    "title": "Welcome!",
-    "section": "QR code",
-    "text": "QR code"
-  },
-  {
     "objectID": "slides/slides-01-intro.html#meet-the-teaching-team",
     "href": "slides/slides-01-intro.html#meet-the-teaching-team",
     "title": "Welcome!",
@@ -537,28 +530,49 @@
     "href": "slides/slides-02-ml-intro.html#which-cat-is-ai-generated",
     "title": "Introduction to Machine Learning",
     "section": "Which cat is AI-generated?",
-    "text": "Which cat is AI-generated?\n\n\n\nSource\n\n\nWhich one do you think is AI-generated?\n\nA\nB\nBoth\nNone"
+    "text": "Which cat is AI-generated?\n\n\n\nSource\n\n\nWhich one do you think is AI-generated?\n\nA\nB\nBoth\nNone\n\nWhat clues did you use to decide?"
+  },
+  {
+    "objectID": "slides/slides-02-ml-intro.html#ai-vs.-ml-vs.-dl",
+    "href": "slides/slides-02-ml-intro.html#ai-vs.-ml-vs.-dl",
+    "title": "Introduction to Machine Learning",
+    "section": "AI vs. ML vs. DL",
+    "text": "AI vs. ML vs. DL\n\nWhat is AI, and how does it relate to Machine Learning (ML) and Deep Learning (DL)?"
   },
   {
     "objectID": "slides/slides-02-ml-intro.html#example-image-classification",
     "href": "slides/slides-02-ml-intro.html#example-image-classification",
     "title": "Introduction to Machine Learning",
     "section": "Example: Image classification",
-    "text": "Example: Image classification\n\nHave you used search in Google Photos? You can search for “my photos of cat” and it will retrieve photos from your libraries containing cats.\nThis can be done using image classification, which is treated as a supervised learning problem."
+    "text": "Example: Image classification\n\nHave you used search in Google Photos? You can search for “cat” and it will retrieve photos from your libraries containing cats.\nThis can be done using image classification."
   },
   {
     "objectID": "slides/slides-02-ml-intro.html#image-classification",
     "href": "slides/slides-02-ml-intro.html#image-classification",
     "title": "Introduction to Machine Learning",
     "section": "Image classification",
-    "text": "Image classification\n\n\n\n\n\nImagine writing a Python program to differenciate between cats and foxes.\n\nHow would you approach it?"
+    "text": "Image classification\n\n\n\n\n\nImagine you want to teach a robot to tell cats and foxes apart.\nHow would you approach it?"
   },
   {
-    "objectID": "slides/slides-02-ml-intro.html#traditional-programming-vs.-ml",
-    "href": "slides/slides-02-ml-intro.html#traditional-programming-vs.-ml",
+    "objectID": "slides/slides-02-ml-intro.html#ai-approach-example",
+    "href": "slides/slides-02-ml-intro.html#ai-approach-example",
     "title": "Introduction to Machine Learning",
-    "section": "Traditional programming vs. ML",
-    "text": "Traditional programming vs. ML\n\nTraditional programming\n\nIdeal for problems where solutions can be derived through the direct application of established algorithms in a clear and predictable manner.\nExample: finding the shortest distance between two nodes (e.g., Dijkstra’s algorithm or the A* algorithm)\n\nMachine learning\n\nAppropriate for scenarios where defining explicit rules or algorithms is challenging due to the complexity or scale of the data.\nExample: Distinguishing between images of cats and foxes by training a machine learning model to recognize patterns that differentiate the two."
+    "section": "AI approach: example",
+    "text": "AI approach: example\n\n\n\n\n\nYou hard-code rules: “If the image has fur, whiskers, and pointy ears, it’s a cat.”\nThis works for normal cases, but what if the cat is missing an ear? Or if the fox has short fur?"
+  },
+  {
+    "objectID": "slides/slides-02-ml-intro.html#ml-approach-example",
+    "href": "slides/slides-02-ml-intro.html#ml-approach-example",
+    "title": "Introduction to Machine Learning",
+    "section": "ML approach: example",
+    "text": "ML approach: example\n\n\n\n\n\nWe don’t tell the model the exact rule. Instead, we give it labeled examples, and it learns which features matter most.\n\nsmall nose ✅\nround face ✅\nwhiskers ✅\n\n\nInstead of giving rules, we let the model figure out the best combination of features from data."
+  },
+  {
+    "objectID": "slides/slides-02-ml-intro.html#dl-approach-example",
+    "href": "slides/slides-02-ml-intro.html#dl-approach-example",
+    "title": "Introduction to Machine Learning",
+    "section": "DL approach: example",
+    "text": "DL approach: example\n\n\n\n\n\nThe robot figures out the best features by itself using a neural network.\nInstead of humans selecting features, the neural network extracts them automatically—from edges to textures to full shapes\nThe more data it sees, the better it gets—without human intervention."
   },
   {
     "objectID": "slides/slides-02-ml-intro.html#what-is-ml",
@@ -638,10 +652,10 @@
     "text": "Logistic regression\n\n\n\n\n\n\n\n\n\n\n\n\n\nSigmoid Function: \\(\\hat{y} = \\sigma(w^\\top x_i + b) = \\frac{1}{1 + e^{-(w^\\top x_i + b)}}\\)\nIf you study \\(\\leq 3\\) hours, you fail.\nIf you study \\(&gt; 3\\) hours, you pass."
   },
   {
-    "objectID": "slides/slides-02-ml-intro.html#a-graphical-representation-of-a-linear-model",
-    "href": "slides/slides-02-ml-intro.html#a-graphical-representation-of-a-linear-model",
+    "objectID": "slides/slides-02-ml-intro.html#a-graphical-view-of-a-linear-model",
+    "href": "slides/slides-02-ml-intro.html#a-graphical-view-of-a-linear-model",
     "title": "Introduction to Machine Learning",
-    "section": "A graphical representation of a linear model",
-    "text": "A graphical representation of a linear model\n\n\n\n\n\n\n\n\n\n\n\n\n\nWe have 4 features: x[0], x[1], x[2], x[3]\nThe output is calculated as \\(y = x[0]w[0] + x[1]w[1] + x[2]w[2] + x[3]w[3]\\)\nFor simplicity, we are ignoring the bias term."
+    "section": "A graphical view of a linear model",
+    "text": "A graphical view of a linear model\n\n\n\n\n\n\n\n\n\n\n\n\n\nWe have 4 features: x[0], x[1], x[2], x[3]\nThe output is calculated as \\(y = x[0]w[0] + x[1]w[1] + x[2]w[2] + x[3]w[3]\\)\nFor simplicity, we are ignoring the bias term."
   }
 ]

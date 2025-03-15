@@ -414,19 +414,22 @@
 <li>Both</li>
 <li>None</li>
 </ul></li>
+<li>What clues did you use to decide?</li>
 </ul>
 </div></div>
 </section>
-<section>
-<section id="what-is-machine-learning-ml" class="title-slide slide level1 center">
-<h1>What is Machine Learning (ML)?</h1>
+<section id="ai-vs.-ml-vs.-dl" class="slide level2 center">
+<h2>AI vs.&nbsp;ML vs.&nbsp;DL</h2>
+<ul>
+<li>What is AI, and how does it relate to Machine Learning (ML) and Deep Learning (DL)?</li>
+</ul>
 
-</section>
+<img data-src="img/ai-ml-dl.png" class="r-stretch"></section>
 <section id="example-image-classification" class="slide level2 center">
 <h2>Example: Image classification</h2>
 <ul>
-<li>Have you used search in Google Photos? You can search for “my photos of cat” and it will retrieve photos from your libraries containing cats.</li>
-<li>This can be done using <strong>image classification</strong>, which is treated as a supervised learning problem.</li>
+<li>Have you used search in Google Photos? You can search for “cat” and it will retrieve photos from your libraries containing cats.</li>
+<li>This can be done using <strong>image classification</strong>.</li>
 </ul>
 </section>
 <section id="image-classification" class="slide level2 center">
@@ -436,26 +439,54 @@
 <p><img data-src="img/cat-or-fox.png"></p>
 </div><div class="column" style="width:40%;">
 <ul>
-<li>Imagine writing a Python program to differenciate between cats and foxes.<br>
-</li>
+<li>Imagine you want to teach a robot to tell cats and foxes apart.</li>
 <li>How would you approach it?</li>
 </ul>
 </div></div>
 </section>
-<section id="traditional-programming-vs.-ml" class="slide level2 smaller center">
-<h2>Traditional programming vs.&nbsp;ML</h2>
+<section id="ai-approach-example" class="slide level2 center">
+<h2>AI approach: example</h2>
+<div class="columns">
+<div class="column" style="width:40%;">
+<p><img data-src="img/cat-or-fox.png"></p>
+</div><div class="column" style="width:60%;">
 <ul>
-<li>Traditional programming
-<ul>
-<li>Ideal for problems where solutions can be derived through the direct application of established algorithms in a clear and predictable manner.</li>
-<li>Example: finding the shortest distance between two nodes (e.g., Dijkstra’s algorithm or the A* algorithm)</li>
-</ul></li>
-<li>Machine learning
-<ul>
-<li>Appropriate for scenarios where defining explicit rules or algorithms is challenging due to the complexity or scale of the data.</li>
-<li>Example: Distinguishing between images of cats and foxes by training a machine learning model to recognize patterns that differentiate the two.</li>
-</ul></li>
+<li>You hard-code rules: “If the image has fur, whiskers, and pointy ears, it’s a cat.”</li>
+<li>This works for normal cases, but what if the cat is missing an ear? Or if the fox has short fur?</li>
 </ul>
+</div></div>
+</section>
+<section id="ml-approach-example" class="slide level2 smaller center">
+<h2>ML approach: example</h2>
+<div class="columns">
+<div class="column" style="width:40%;">
+<p><img data-src="img/cat-or-fox.png"></p>
+</div><div class="column" style="width:60%;">
+<ul>
+<li>We don’t tell the model the exact rule. Instead, we give it labeled examples, and it learns which features matter most.
+<ul>
+<li>small nose ✅</li>
+<li>round face ✅</li>
+<li>whiskers ✅<br>
+</li>
+</ul></li>
+<li>Instead of giving rules, we let the model figure out the best combination of features from data.<br>
+</li>
+</ul>
+</div></div>
+</section>
+<section id="dl-approach-example" class="slide level2 smaller center">
+<h2>DL approach: example</h2>
+<div class="columns">
+<div class="column" style="width:40%;">
+<p><img data-src="img/cat-or-fox.png"></p>
+</div><div class="column" style="width:60%;">
+<ul>
+<li>The robot figures out the best features by itself using a neural network.</li>
+<li>Instead of humans selecting features, the neural network extracts them automatically—from edges to textures to full shapes</li>
+<li>The more data it sees, the better it gets—without human intervention.</li>
+</ul>
+</div></div>
 </section>
 <section id="what-is-ml" class="slide level2 center">
 <h2>What is ML?</h2>
@@ -501,7 +532,7 @@
 </section>
 <section id="running-example" class="slide level2 smaller center">
 <h2>Running example</h2>
-<div id="b858f08b" class="cell" data-execution_count="2">
+<div id="3f0c55ee" class="cell" data-execution_count="2">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a></a>toy_df <span class="op">=</span> pd.read_csv(DATA_DIR <span class="op">+</span> <span class="st">'quiz2-grade-toy-regression.csv'</span>)</span>
 <span id="cb1-2"><a></a>toy_df</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="2">
@@ -649,7 +680,7 @@
 </ul></li>
 </ul>
 </div><div class="column" style="width:55%;">
-<div id="930c0881" class="cell" data-execution_count="3">
+<div id="6d4e0b69" class="cell" data-execution_count="3">
 <div class="cell-output cell-output-display">
 <div>
 <figure>
@@ -681,7 +712,7 @@
 <h2>Logistic regression</h2>
 <div class="columns">
 <div class="column" style="width:60%;">
-<div id="ef3cd38c" class="cell" data-execution_count="4">
+<div id="b42bce43" class="cell" data-execution_count="4">
 <div class="cell-output cell-output-display">
 <div>
 <figure>
@@ -698,11 +729,11 @@
 </ul>
 </div></div>
 </section>
-<section id="a-graphical-representation-of-a-linear-model" class="slide level2 smaller center">
-<h2>A graphical representation of a linear model</h2>
+<section id="a-graphical-view-of-a-linear-model" class="slide level2 smaller center">
+<h2>A graphical view of a linear model</h2>
 <div class="columns">
 <div class="column" style="width:50%;">
-<div id="910fe2c2" class="cell" data-execution_count="5">
+<div id="93d84d10" class="cell" data-execution_count="5">
 <div class="cell-output cell-output-display" data-execution_count="5">
 <div>
 <figure>
@@ -724,7 +755,7 @@
 
 </div>
 </div>
-</section></section>
+</section>
     </div>
   </div>
 

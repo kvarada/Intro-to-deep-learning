@@ -58,23 +58,30 @@ Neural Networks](https://dl.acm.org/doi/10.1145/3065386)
   - Achieved a winning test error rate of 15.3%, compared to 26.2% achieved by the second-best entry in the ILSVRC-2012 competition. 
 - Let's go over the basics of a neural network.
 
-## Introduction to neural networks
-\
+## A graphical view of a linear model {.smaller}
+:::: {.columns}
 
-- Neural networks can be viewed a generalization of linear models where we apply a series of transformations.
-- In the following graphical representation of a linear model, we have 4 features: x[0], x[1], x[2], x[3]
-- The output is calculated as $y = x[0]w[0] + x[1]w[1] + x[2]w[2] + x[3]w[3]$
-- For simplicity, we are ignoring the bias term. 
-
+:::{.column width="50%"}
 ```{python}
 import mglearn
 
 mglearn.plots.plot_logistic_regression_graph()
 ```
+:::
 
-## Adding a layer of transformations 
+:::{.column width="50%"}
+- Remember this graphical view of linear models? 
+- We have 4 features: x[0], x[1], x[2], x[3]
+- The output is calculated as $y = x[0]w[0] + x[1]w[1] + x[2]w[2] + x[3]w[3]$
+- For simplicity, we are ignoring the bias term. 
+:::
+::::
+
+
+## Introduction to neural networks
 \
 
+- Neural networks can be viewed a generalization of linear models where we apply a series of transformations.
 - Below we are adding one "layer" of transformations in between features and the target. 
 - We are repeating the the process of computing the weighted sum multiple times.  
 - The **hidden units** (e.g., h[1], h[2], ...) represent the intermediate processing steps. 
