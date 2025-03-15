@@ -53,17 +53,22 @@ DATA_DIR = os.path.join(os.path.abspath("."), "data/")
     - B
     - Both
     - None
+- What clues did you use to decide?    
+
 :::
 :::: 
 
+## AI vs. ML vs. DL 
 
+- What is AI, and how does it relate to Machine Learning (ML) and Deep Learning (DL)?
 
-# What is Machine Learning (ML)?
+![](img/ai-ml-dl.png)
+
 
 ## Example: Image classification
 
-- Have you used search in Google Photos? You can search for "my photos of cat" and it will retrieve photos from your libraries containing cats.
-- This can be done using **image classification**, which is treated as a supervised learning problem. 
+- Have you used search in Google Photos? You can search for "cat" and it will retrieve photos from your libraries containing cats.
+- This can be done using **image classification**. 
 
 ## Image classification
 
@@ -74,22 +79,65 @@ DATA_DIR = os.path.join(os.path.abspath("."), "data/")
 :::
 
 ::: {.column width="40%"}
-- Imagine writing a Python program to differenciate between cats and foxes.  
+
+- Imagine you want to teach a robot to tell cats and foxes apart.
 - How would you approach it? 
 ::: 
 
 ::::
 
-## Traditional programming vs. ML {.smaller}
+## AI approach: example
 
-- Traditional programming 
-    - Ideal for problems where solutions can be derived through the direct application of established algorithms in a clear and predictable manner.
-    - Example: finding the shortest distance between two nodes (e.g., Dijkstra’s algorithm or the A* algorithm)
-- Machine learning
-    - Appropriate for scenarios where defining explicit rules or algorithms is challenging due to the complexity or scale of the data.
-    - Example: Distinguishing between images of cats and foxes by training a machine learning model to recognize patterns that differentiate the two.
+:::: {.columns}
+
+::: {.column width="40%"}
+![](img/cat-or-fox.png) 
+:::
+
+::: {.column width="60%"}
+- You hard-code rules: "If the image has fur, whiskers, and pointy ears, it's a cat."
+- This works for normal cases, but what if the cat is missing an ear? Or if the fox has short fur?
+::: 
+
+::::
+
+## ML approach: example {.smaller}
+
+:::: {.columns}
+
+::: {.column width="40%"}
+![](img/cat-or-fox.png) 
+:::
+
+::: {.column width="60%"}
+- We don’t tell the model the exact rule. Instead, we give it labeled examples, and it learns which features matter most.
+    - small nose ✅
+    - round face ✅
+    - whiskers ✅    
+- Instead of giving rules, we let the model figure out the best combination of features from data.    
+::: 
+
+::::
+
+## DL approach: example {.smaller}
+
+:::: {.columns}
+
+::: {.column width="40%"}
+![](img/cat-or-fox.png) 
+:::
+
+::: {.column width="60%"}
+- The robot figures out the best features by itself using a neural network.
+- Instead of humans selecting features, the neural network extracts them automatically—from edges to textures to full shapes
+- The more data it sees, the better it gets—without human intervention.
+::: 
+
+::::
+
 
 ##  What is ML? 
+
 
 - ML uses data to build models that identify patterns, make predictions, or generate content.
 - It enables computers to learn from data.
@@ -117,7 +165,7 @@ Imagine you're taking a course with four homework assignments and two quizzes. Y
 
 Here are a few rows from the data. 
 
-![](img/sup-ml-terminology.png)
+![](img/sup-ML-terminology.png)
 
 - **Features:** relevant characteristics of the problem, usually suggested by experts  (typically denoted by $X$). 
 - **Target:** the variable we want to predict (typically denoted by $y$). 
@@ -260,7 +308,7 @@ plt.show()
 
 ::::
 
-## A graphical representation of a linear model {.smaller}
+## A graphical view of a linear model {.smaller}
 :::: {.columns}
 
 :::{.column width="50%"}
