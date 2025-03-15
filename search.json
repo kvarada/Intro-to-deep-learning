@@ -1,220 +1,241 @@
 [
   {
-    "objectID": "slides/slides-02-ml-intro.html#which-cat-is-ai-generated",
-    "href": "slides/slides-02-ml-intro.html#which-cat-is-ai-generated",
-    "title": "Introduction to Machine learning",
-    "section": "Which cat is AI-generated?",
-    "text": "Which cat is AI-generated?\n\n\n\nSource\n\n\nWhich one do you think is AI-generated?\n\nA\nB\nBoth\nNone"
+    "objectID": "slides/slides-03-deep-learning.html#learning-outcomes",
+    "href": "slides/slides-03-deep-learning.html#learning-outcomes",
+    "title": "Deep Learning",
+    "section": "Learning outcomes",
+    "text": "Learning outcomes\n\nFrom this module, you will be able to\n\nExplain the role of neural networks in machine learning, including their advantages and disadvantages.\nDiscuss why traditional methods are less effective for image data.\nGain a high-level understanding of transfer learning.\nUse transfer learning for your own tasks.\nDifferentiate between image classification and object detection."
   },
   {
-    "objectID": "slides/slides-02-ml-intro.html#example-image-classification",
-    "href": "slides/slides-02-ml-intro.html#example-image-classification",
-    "title": "Introduction to Machine learning",
-    "section": "Example: Image classification",
-    "text": "Example: Image classification\n\nHave you used search in Google Photos? You can search for “my photos of cat” and it will retrieve photos from your libraries containing cats.\nThis can be done using image classification, which is treated as a supervised learning problem."
-  },
-  {
-    "objectID": "slides/slides-02-ml-intro.html#image-classification",
-    "href": "slides/slides-02-ml-intro.html#image-classification",
-    "title": "Introduction to Machine learning",
+    "objectID": "slides/slides-03-deep-learning.html#image-classification",
+    "href": "slides/slides-03-deep-learning.html#image-classification",
+    "title": "Deep Learning",
     "section": "Image classification",
-    "text": "Image classification\n\n\n\n\n\nImagine writing a Python program to differenciate between cats and foxes.\n\nHow would you approach it?"
+    "text": "Image classification\n\n\nHave you used search in Google Photos? You can search for “my photos of cat” and it will retrieve photos from your libraries containing cats. This can be done using image classification, which is treated as a supervised learning problem, where we define a set of target classes (objects to identify in images), and train a model to recognize them using labeled example photos."
   },
   {
-    "objectID": "slides/slides-02-ml-intro.html#traditional-programming-vs.-ml",
-    "href": "slides/slides-02-ml-intro.html#traditional-programming-vs.-ml",
-    "title": "Introduction to Machine learning",
-    "section": "Traditional programming vs. ML",
-    "text": "Traditional programming vs. ML\n\nTraditional programming\n\nIdeal for problems where solutions can be derived through the direct application of established algorithms in a clear and predictable manner.\nExample: finding the shortest distance between two nodes (e.g., Dijkstra’s algorithm or the A* algorithm)\n\nMachine learning\n\nAppropriate for scenarios where defining explicit rules or algorithms is challenging due to the complexity or scale of the data.\nExample: Distinguishing between images of cats and foxes by training a machine learning model to recognize patterns that differentiate the two."
+    "objectID": "slides/slides-03-deep-learning.html#image-classification-1",
+    "href": "slides/slides-03-deep-learning.html#image-classification-1",
+    "title": "Deep Learning",
+    "section": "Image classification",
+    "text": "Image classification\n\n\nImage classification is not an easy problem because of the variations in the location of the object, lighting, background, camera angle, camera focus etc."
   },
   {
-    "objectID": "slides/slides-02-ml-intro.html#what-is-ml",
-    "href": "slides/slides-02-ml-intro.html#what-is-ml",
-    "title": "Introduction to Machine learning",
-    "section": "What is ML?",
-    "text": "What is ML?\n\nML uses data to build models that identify patterns, make predictions, or generate content.\nIt enables computers to learn from data.\nNo single model is suitable for all situations."
+    "objectID": "slides/slides-03-deep-learning.html#neural-networks",
+    "href": "slides/slides-03-deep-learning.html#neural-networks",
+    "title": "Deep Learning",
+    "section": "Neural networks",
+    "text": "Neural networks\n\n\n\nNeural networks are perfect for these types of problems where local structures are important.\nA significant advancement in image classification was the application of convolutional neural networks (ConvNets or CNNs) to this problem.\n\nImageNet Classification with Deep Convolutional Neural Networks\nAchieved a winning test error rate of 15.3%, compared to 26.2% achieved by the second-best entry in the ILSVRC-2012 competition.\n\nLet’s go over the basics of a neural network."
   },
   {
-    "objectID": "slides/slides-02-ml-intro.html#supervised-learning",
-    "href": "slides/slides-02-ml-intro.html#supervised-learning",
-    "title": "Introduction to Machine learning",
-    "section": "Supervised learning",
-    "text": "Supervised learning\n\nWe wish to find a model function \\(f\\) that relates \\(X\\) to \\(y\\).\nWe use the model function to predict targets of new examples."
+    "objectID": "slides/slides-03-deep-learning.html#introduction-to-neural-networks",
+    "href": "slides/slides-03-deep-learning.html#introduction-to-neural-networks",
+    "title": "Deep Learning",
+    "section": "Introduction to neural networks",
+    "text": "Introduction to neural networks\n\n\n\nNeural networks can be viewed a generalization of linear models where we apply a series of transformations.\nIn the following graphical representation of a linear model, we have 4 features: x[0], x[1], x[2], x[3]\nThe output is calculated as \\(y = x[0]w[0] + x[1]w[1] + x[2]w[2] + x[3]w[3]\\)\nFor simplicity, we are ignoring the bias term."
   },
   {
-    "objectID": "slides/slides-02-ml-intro.html#iclicker-1.1-ml-or-not",
-    "href": "slides/slides-02-ml-intro.html#iclicker-1.1-ml-or-not",
-    "title": "Introduction to Machine learning",
-    "section": "iClicker 1.1: ML or not",
-    "text": "iClicker 1.1: ML or not\nhttps://join.iclicker.com/YWOJ\nSelect all of the following statements which are suitable problems for machine learning.\n\n\nIdentifying objects within digital images, such as facial recognition in security systems or categorizing images based on content.\n\n\nProviding solutions for common technical issues in software or hardware, where a series of diagnostic steps can be predefined.\n\n\nDetermining if individuals meet the necessary criteria for government or financial services based on strict guidelines.\n\n\nIdentifying unusual patterns that may indicate fraudulent transactions in banking and finance.\n\n\nAutomatically analyzing images from MRIs, CT scans, or X-rays to detect abnormalities like tumors or fractures."
+    "objectID": "slides/slides-03-deep-learning.html#adding-a-layer-of-transformations",
+    "href": "slides/slides-03-deep-learning.html#adding-a-layer-of-transformations",
+    "title": "Deep Learning",
+    "section": "Adding a layer of transformations",
+    "text": "Adding a layer of transformations\n\n\n\nBelow we are adding one “layer” of transformations in between features and the target.\nWe are repeating the the process of computing the weighted sum multiple times.\n\nThe hidden units (e.g., h[1], h[2], …) represent the intermediate processing steps."
   },
   {
-    "objectID": "slides/slides-02-ml-intro.html#iclicker-1.2-ml-or-not",
-    "href": "slides/slides-02-ml-intro.html#iclicker-1.2-ml-or-not",
-    "title": "Introduction to Machine learning",
-    "section": "iClicker 1.2: ML or not",
-    "text": "iClicker 1.2: ML or not\nhttps://join.iclicker.com/YWOJ\nSelect all of the following statements which are suitable problems for human experts.\n\n\nEnsuring that company practices adhere to established regulations and standards, where rules are clearly set out by legal or regulatory bodies.\n\n\nPredicting user preferences based on past behavior, crucial for services like Netflix or Amazon for suggesting movies or products.\n\n\nEvaluating legal cases where the context and subtleties of human behavior and law interpretation are crucial.\n\n\nMaking decisions about end-of-life care or consent for surgery where ethical considerations are complex and deeply personal.\n\n\nAddressing mental health issues where human empathy, understanding, and adaptability are key."
+    "objectID": "slides/slides-03-deep-learning.html#one-more-layer-of-transformations",
+    "href": "slides/slides-03-deep-learning.html#one-more-layer-of-transformations",
+    "title": "Deep Learning",
+    "section": "One more layer of transformations",
+    "text": "One more layer of transformations\n\n\n\nNow we are adding one more layer of transformations."
   },
   {
-    "objectID": "slides/slides-02-ml-intro.html#summary-when-is-ml-suitable",
-    "href": "slides/slides-02-ml-intro.html#summary-when-is-ml-suitable",
-    "title": "Introduction to Machine learning",
-    "section": "Summary: When is ML suitable?",
-    "text": "Summary: When is ML suitable?\n\nML excels when the problem involve identifying complex patterns or relationships in large datasets that are difficult for humans to discern manually.\nRule-based systems are suitable where clear and deterministic rules can be defined. Good for structured decision making.\nHuman experts are good with problems which require deep contextual understanding, ethical judgment, creative input, or emotional intelligence."
+    "objectID": "slides/slides-03-deep-learning.html#neural-networks-1",
+    "href": "slides/slides-03-deep-learning.html#neural-networks-1",
+    "title": "Deep Learning",
+    "section": "Neural networks",
+    "text": "Neural networks\n\n\n\nWith a neural net, you specify the number of features after each transformation.\n\nIn the above, it goes from 4 to 3 to 3 to 1.\n\nTo make them really powerful compared to the linear models, we apply a non-linear function to the weighted sum for each hidden node.\nNeural network = neural net\nDeep learning ~ using neural networks"
   },
   {
-    "objectID": "slides/slides-02-ml-intro.html#introduction-to-machine-learning",
-    "href": "slides/slides-02-ml-intro.html#introduction-to-machine-learning",
-    "title": "Introduction to Machine learning",
-    "section": "Introduction to Machine Learning",
-    "text": "Introduction to Machine Learning\n\nMachine Learning uses computer programs to digest and accurately model data. After training on the data, a program can be used to extract hidden patterns, make predictions in new situations or generate novel content.\nThe program learns based on the features present in the data, which represent the information we have about each example."
+    "objectID": "slides/slides-03-deep-learning.html#why-neural-networks",
+    "href": "slides/slides-03-deep-learning.html#why-neural-networks",
+    "title": "Deep Learning",
+    "section": "Why neural networks?",
+    "text": "Why neural networks?\n\nThey can learn very complex functions.\n\nThe fundamental tradeoff is primarily controlled by the number of layers and layer sizes.\nMore layers / bigger layers –&gt; more complex model.\nYou can generally get a model that will not underfit.\n\nThey work really well for structured data:\n\n1D sequence, e.g. timeseries, language\n2D image\n3D image or video\n\nThey’ve had some incredible successes in the last 12 years.\nTransfer learning (coming later today) is really useful."
   },
   {
-    "objectID": "slides/slides-02-ml-intro.html#introduction-to-machine-learning-1",
-    "href": "slides/slides-02-ml-intro.html#introduction-to-machine-learning-1",
-    "title": "Introduction to Machine learning",
-    "section": "Introduction to Machine Learning",
-    "text": "Introduction to Machine Learning"
+    "objectID": "slides/slides-03-deep-learning.html#why-not-neural-networks",
+    "href": "slides/slides-03-deep-learning.html#why-not-neural-networks",
+    "title": "Deep Learning",
+    "section": "Why not neural networks?",
+    "text": "Why not neural networks?\n\nOften they require a lot of data.\nThey require a lot of compute time, and, to be faster, specialized hardware called GPUs.\nThey have huge numbers of hyperparameters\n\nThink of each layer having hyperparameters, plus some overall hyperparameters.\nBeing slow compounds this problem.\n\nThey are not interpretable.\nI don’t recommend training them on your own without further training\nGood news\n\nYou don’t have to train your models from scratch in order to use them.\nI’ll show you some ways to use neural networks without training them yourselves."
   },
   {
-    "objectID": "slides/slides-02-ml-intro.html#classification-vs.-regression",
-    "href": "slides/slides-02-ml-intro.html#classification-vs.-regression",
-    "title": "Introduction to Machine learning",
-    "section": "Classification vs. Regression",
-    "text": "Classification vs. Regression"
+    "objectID": "slides/slides-03-deep-learning.html#deep-learning-software",
+    "href": "slides/slides-03-deep-learning.html#deep-learning-software",
+    "title": "Deep Learning",
+    "section": "Deep learning software",
+    "text": "Deep learning software\nThe current big players are:\n\nPyTorch\nTensorFlow\n\nBoth are heavily used in industry. If interested, see comparison of deep learning software."
   },
   {
-    "objectID": "slides/slides-02-ml-intro.html#measuring-performance",
-    "href": "slides/slides-02-ml-intro.html#measuring-performance",
-    "title": "Introduction to Machine learning",
-    "section": "Measuring Performance",
-    "text": "Measuring Performance\n\n\n\nPerformance on classification tasks can be measured based on the accuracy of the model’s predictions.\nPerformance on a regression task can be measured based on error. Mean squared error is one choice, but there are many others!"
+    "objectID": "slides/slides-03-deep-learning.html#introduction-to-computer-vision",
+    "href": "slides/slides-03-deep-learning.html#introduction-to-computer-vision",
+    "title": "Deep Learning",
+    "section": "Introduction to computer vision",
+    "text": "Introduction to computer vision\n\n\n\nComputer vision refers to understanding images/videos, usually using ML/AI.\nIn the last decade this field has been dominated by deep learning. We will explore image classification and object detection."
   },
   {
-    "objectID": "slides/slides-02-ml-intro.html#inference-vs.-prediction",
-    "href": "slides/slides-02-ml-intro.html#inference-vs.-prediction",
-    "title": "Introduction to Machine learning",
-    "section": "Inference vs. Prediction",
-    "text": "Inference vs. Prediction\n\n\n\nInference is the use of a model to infer a relationship between features (independent variables) and targets (independent variables).\nPrediction is the use of a model to predict the target value for a new example not seen in training."
+    "objectID": "slides/slides-03-deep-learning.html#introduction-to-computer-vision-1",
+    "href": "slides/slides-03-deep-learning.html#introduction-to-computer-vision-1",
+    "title": "Deep Learning",
+    "section": "Introduction to computer vision",
+    "text": "Introduction to computer vision\n\n\n\nimage classification: is this a cat or a dog?\nobject localization: where is the cat in this image?\nobject detection: What are the various objects in the image?\ninstance segmentation: What are the shapes of these various objects in the image?\nand much more…"
   },
   {
-    "objectID": "slides/slides-02-ml-intro.html#example-linear-regression",
-    "href": "slides/slides-02-ml-intro.html#example-linear-regression",
-    "title": "Introduction to Machine learning",
-    "section": "Example: Linear Regression",
-    "text": "Example: Linear Regression"
+    "objectID": "slides/slides-03-deep-learning.html#pre-trained-models",
+    "href": "slides/slides-03-deep-learning.html#pre-trained-models",
+    "title": "Deep Learning",
+    "section": "Pre-trained models",
+    "text": "Pre-trained models\n\n\n\nIn practice, very few people train an entire CNN from scratch because it requires a large dataset, powerful computers, and a huge amount of human effort to train the model.\nInstead, a common practice is to download a pre-trained model and fine tune it for your task. This is called transfer learning.\nTransfer learning is one of the most common techniques used in the context of computer vision and natural language processing.\nIt refers to using a model already trained on one task as a starting point for learning to perform another task."
   },
   {
-    "objectID": "slides/slides-02-ml-intro.html#linear-classifiers",
-    "href": "slides/slides-02-ml-intro.html#linear-classifiers",
-    "title": "Introduction to Machine learning",
-    "section": "Linear Classifiers",
-    "text": "Linear Classifiers\n\n\nWe can also build linear models for classification tasks. The idea is to convert the output from an arbitrary number to a number between 0 and 1, and treat it like a “probability”.\nIn logistic regression, we squash the output using the sigmoid function and then adjust parameters (in training) to find the choice that makes the data “most likely”."
+    "objectID": "slides/slides-03-deep-learning.html#pre-trained-models-out-of-the-box",
+    "href": "slides/slides-03-deep-learning.html#pre-trained-models-out-of-the-box",
+    "title": "Deep Learning",
+    "section": "Pre-trained models out-of-the-box",
+    "text": "Pre-trained models out-of-the-box\n\n\n\n\n\nLet’s first apply one of these pre-trained models to our own problem right out of the box."
   },
   {
-    "objectID": "slides/slides-02-ml-intro.html#linear-classifiers-1",
-    "href": "slides/slides-02-ml-intro.html#linear-classifiers-1",
-    "title": "Introduction to Machine learning",
-    "section": "Linear Classifiers",
-    "text": "Linear Classifiers\n\nCan you guess what this dataset is?"
+    "objectID": "slides/slides-03-deep-learning.html#pre-trained-models-out-of-the-box-1",
+    "href": "slides/slides-03-deep-learning.html#pre-trained-models-out-of-the-box-1",
+    "title": "Deep Learning",
+    "section": "Pre-trained models out-of-the-box",
+    "text": "Pre-trained models out-of-the-box\n\n\n\nWe can easily download famous models using the torchvision.models module. All models are available with pre-trained weights (based on ImageNet’s 224 x 224 images)\nWe used a pre-trained model vgg16 which is trained on the ImageNet data.\nWe preprocess the given image.\nWe get prediction from this pre-trained model on a given image along with prediction probabilities.\n\nFor a given image, this model will spit out one of the 1000 classes from ImageNet."
   },
   {
-    "objectID": "slides/slides-02-ml-intro.html#linear-classifiers-2",
-    "href": "slides/slides-02-ml-intro.html#linear-classifiers-2",
-    "title": "Introduction to Machine learning",
-    "section": "Linear Classifiers",
-    "text": "Linear Classifiers\n\nLogistic Regression predicts a linear decision boundary."
+    "objectID": "slides/slides-03-deep-learning.html#pre-trained-models-out-of-the-box-2",
+    "href": "slides/slides-03-deep-learning.html#pre-trained-models-out-of-the-box-2",
+    "title": "Deep Learning",
+    "section": "Pre-trained models out-of-the-box",
+    "text": "Pre-trained models out-of-the-box\n\nLet’s predict labels with associated probabilities for unseen images\n\n\n\n\n\n\n\n\n\n\n\n                         Class  Probability score\n                     tiger cat              0.353\n              tabby, tabby cat              0.207\n               lynx, catamount              0.050\nPembroke, Pembroke Welsh corgi              0.046\n--------------------------------------------------------------\n\n\n\n\n\n\n\n\n\n                                     Class  Probability score\n         cheetah, chetah, Acinonyx jubatus              0.983\n                  leopard, Panthera pardus              0.012\njaguar, panther, Panthera onca, Felis onca              0.004\n       snow leopard, ounce, Panthera uncia              0.001\n--------------------------------------------------------------\n\n\n\n\n\n\n\n\n\n                                   Class  Probability score\n                                 macaque              0.714\npatas, hussar monkey, Erythrocebus patas              0.122\n      proboscis monkey, Nasalis larvatus              0.098\n                   guenon, guenon monkey              0.017\n--------------------------------------------------------------\n\n\n\n\n\n\n\n\n\n                        Class  Probability score\nWalker hound, Walker foxhound              0.580\n             English foxhound              0.091\n                  EntleBucher              0.080\n                       beagle              0.065\n--------------------------------------------------------------"
   },
   {
-    "objectID": "slides/slides-02-ml-intro.html#sentiment-analysis-an-example",
-    "href": "slides/slides-02-ml-intro.html#sentiment-analysis-an-example",
-    "title": "Introduction to Machine learning",
-    "section": "Sentiment Analysis: An Example",
-    "text": "Sentiment Analysis: An Example\n\nLet us attempt to use logistic regression to do sentiment analysis on a database of IMDB reviews. The database is available here.\n\nimdb_df = pd.read_csv(\"data/imdb_master.csv\", encoding=\"ISO-8859-1\")\nimdb_df.rename(columns={\"sentiment\": \"label\"}, inplace = True)\n\n\n\n\n\n\n\n\n\n\nreview\nlabel\n\n\n\n\n0\nOne of the other reviewers has mentioned that ...\npositive\n\n\n1\nA wonderful little production. &lt;br /&gt;&lt;br /&gt;The...\npositive\n\n\n2\nI thought this was a wonderful way to spend ti...\npositive\n\n\n3\nBasically there's a family where a little boy ...\nnegative\n\n\n4\nPetter Mattei's \"Love in the Time of Money\" is...\npositive\n\n\n\n\n\n\n\nWe will use only about 10% of the dataset for training (to speed things up)"
+    "objectID": "slides/slides-03-deep-learning.html#pre-trained-models-out-of-the-box-3",
+    "href": "slides/slides-03-deep-learning.html#pre-trained-models-out-of-the-box-3",
+    "title": "Deep Learning",
+    "section": "Pre-trained models out-of-the-box",
+    "text": "Pre-trained models out-of-the-box\n\n\n\nWe got these predictions without “doing the ML ourselves”.\nWe are using pre-trained vgg16 model which is available in torchvision.\n\ntorchvision has many such pre-trained models available that have been very successful across a wide range of tasks: AlexNet, VGG, ResNet, Inception, MobileNet, etc.\n\nMany of these models have been pre-trained on famous datasets like ImageNet.\nSo if we use them out-of-the-box, they will give us one of the ImageNet classes as classification."
   },
   {
-    "objectID": "slides/slides-02-ml-intro.html#bag-of-words",
-    "href": "slides/slides-02-ml-intro.html#bag-of-words",
-    "title": "Introduction to Machine learning",
-    "section": "Bag of Words",
-    "text": "Bag of Words\n\nTo create features that logistic regression can use, we will represent these reviews via a “bag of words” strategy.\nWe create a new feature for every word that appears in the dataset. Then, if a review contains that word exactly once, the corresponding feature gets a value of 1 for that review. If the word appears four times, the feature gets a value of 4. If the word is not present, it’s marked as 0."
+    "objectID": "slides/slides-03-deep-learning.html#pre-trained-models-out-of-the-box-4",
+    "href": "slides/slides-03-deep-learning.html#pre-trained-models-out-of-the-box-4",
+    "title": "Deep Learning",
+    "section": "Pre-trained models out-of-the-box",
+    "text": "Pre-trained models out-of-the-box\n\n\n\nLet’s try some images which are unlikely to be there in ImageNet.\nIt’s not doing very well here because ImageNet doesn’t have proper classes for these images.\n\n\n\n\n\n\n\n\n\n\n\n         Class  Probability score\ncucumber, cuke              0.146\n         plate              0.117\n     guacamole              0.099\n  Granny Smith              0.091\n--------------------------------------------------------------\n\n\n\n\n\n\n\n\n\n                                      Class  Probability score\n                                        fig              0.637\n                                pomegranate              0.193\ngrocery store, grocery, food market, market              0.041\n                                      crate              0.023\n--------------------------------------------------------------\n\n\n\n\n\n\n\n\n\n                                               Class  Probability score\n                                         toilet seat              0.171\n                                          safety pin              0.060\nbannister, banister, balustrade, balusters, handrail              0.039\n                                              bubble              0.035\n--------------------------------------------------------------\n\n\n\n\n\n\n\n\n\n                  Class  Probability score\n                   vase              0.078\n                thimble              0.074\n             plate rack              0.049\nsaltshaker, salt shaker              0.047\n--------------------------------------------------------------\n\n\n\n\n\n\n\n\n\n                      Class  Probability score\n           pizza, pizza pie              0.998\nfrying pan, frypan, skillet              0.001\n                     potpie              0.000\n                French loaf              0.000\n--------------------------------------------------------------\n\n\n\n\n\n\n\n\n\n              Class  Probability score\n     patio, terrace              0.213\n           fountain              0.164\nlakeside, lakeshore              0.097\n            sundial              0.088\n--------------------------------------------------------------"
   },
   {
-    "objectID": "slides/slides-02-ml-intro.html#bag-of-words-1",
-    "href": "slides/slides-02-ml-intro.html#bag-of-words-1",
-    "title": "Introduction to Machine learning",
-    "section": "Bag of Words",
-    "text": "Bag of Words\n\nNotice that the result is a sparse matrix. Most reviews contain only a small number of words.\n\nvec = CountVectorizer(stop_words=\"english\")\nbow = vec.fit_transform(X_train)\nbow\n\n&lt;Compressed Sparse Row sparse matrix of dtype 'int64'\n    with 439384 stored elements and shape (5000, 38867)&gt;\n\n\nThere are a total of 38867 “words” among the reviews. Here are some of them:\n\n\narray(['00', 'affection', 'apprehensive', 'barbara', 'blore',\n       'businessman', 'chatterjee', 'commanding', 'cramped', 'defining',\n       'displaced', 'edie', 'evolving', 'fingertips', 'gaffers',\n       'gravitas', 'heist', 'iliad', 'investment', 'kidnappee',\n       'licentious', 'malã', 'mice', 'museum', 'obsessiveness',\n       'parapsychologist', 'plasters', 'property', 'reclined',\n       'ridiculous', 'sayid', 'shivers', 'sohail', 'stomaches', 'syrupy',\n       'tolerance', 'unbidden', 'verneuil', 'wilcox'], dtype=object)"
+    "objectID": "slides/slides-03-deep-learning.html#pre-trained-models-out-of-the-box-5",
+    "href": "slides/slides-03-deep-learning.html#pre-trained-models-out-of-the-box-5",
+    "title": "Deep Learning",
+    "section": "Pre-trained models out-of-the-box",
+    "text": "Pre-trained models out-of-the-box\n\n\n\nHere we are using pre-trained models out-of-the-box.\nCan we use pre-trained models for our own classification problem with our classes?\nYes!! We have two options here:\n\nAdd some extra layers to the pre-trained network to suit our particular task\nPass training data through the network and save the output to use as features for training some other model"
   },
   {
-    "objectID": "slides/slides-02-ml-intro.html#checking-the-class-counts",
-    "href": "slides/slides-02-ml-intro.html#checking-the-class-counts",
-    "title": "Introduction to Machine learning",
-    "section": "Checking the class counts",
-    "text": "Checking the class counts\nLet us see how many reviews are positive, and how many are negative.  \n\ny_train.value_counts()\n\nlabel\npositive    2517\nnegative    2483\nName: count, dtype: int64\n\n\n\n\nThe dataset looks pretty balanced, so a classifier predicting at random would at best guess about 50% correctly.\nWe will not train our model."
+    "objectID": "slides/slides-03-deep-learning.html#pre-trained-models-to-extract-features",
+    "href": "slides/slides-03-deep-learning.html#pre-trained-models-to-extract-features",
+    "title": "Deep Learning",
+    "section": "Pre-trained models to extract features",
+    "text": "Pre-trained models to extract features\n\n\n\nLet’s use pre-trained models to extract features.\nWe will pass our specific data through a pre-trained network to get a feature vector for each example in the data.\nThe feature vector is usually extracted from the last layer, before the classification layer from the pre-trained network.\nYou can think of each layer a transformer applying some transformations on the input received to that later."
   },
   {
-    "objectID": "slides/slides-02-ml-intro.html#testing-performance-1",
-    "href": "slides/slides-02-ml-intro.html#testing-performance-1",
-    "title": "Introduction to Machine learning",
-    "section": "Testing Performance",
-    "text": "Testing Performance\n\n\nLet’s see how the model performs after training.\n\n\n\n\n\n\n\n\n\nfit_time\nscore_time\ntest_score\ntrain_score\n\n\n\n\n0\n0.408651\n0.057845\n0.828\n0.99975\n\n\n1\n0.413707\n0.060457\n0.830\n0.99975\n\n\n2\n0.426044\n0.059502\n0.848\n0.99975\n\n\n3\n0.404603\n0.058301\n0.833\n1.00000\n\n\n4\n0.406852\n0.059646\n0.840\n0.99975\n\n\n\n\n\n\n\n\nWe’re able to predict with roughly 84% accuracy on validation sets. Looks like our model learned something!"
+    "objectID": "slides/slides-03-deep-learning.html#pre-trained-models-to-extract-features-1",
+    "href": "slides/slides-03-deep-learning.html#pre-trained-models-to-extract-features-1",
+    "title": "Deep Learning",
+    "section": "Pre-trained models to extract features",
+    "text": "Pre-trained models to extract features\n\n\n\nOnce we extract these feature vectors for all images in our training data, we can train a machine learning classifier such as logistic regression or random forest.\nThis classifier will be trained on our classes using feature representations extracted from the pre-trained models.\n\nLet’s try this out.\nIt’s better to train such models with GPU. Since our dataset is quite small, we won’t have problems running it on a CPU."
   },
   {
-    "objectID": "slides/slides-02-ml-intro.html#tuning-hyperparameters",
-    "href": "slides/slides-02-ml-intro.html#tuning-hyperparameters",
-    "title": "Introduction to Machine learning",
-    "section": "Tuning hyperparameters",
-    "text": "Tuning hyperparameters\n\n\nHowever, the training scores are perfect (and higher than validation scores) so our model is likely overfitting.\nMaybe it just memorized some rare words, each appearing only in one review, and associated these with the review’s label. We could try reducing the size of our dictionary to prevent this."
+    "objectID": "slides/slides-03-deep-learning.html#pre-trained-models-to-extract-features-2",
+    "href": "slides/slides-03-deep-learning.html#pre-trained-models-to-extract-features-2",
+    "title": "Deep Learning",
+    "section": "Pre-trained models to extract features",
+    "text": "Pre-trained models to extract features\n\n\nLet’s look at some sample images in the dataset."
   },
   {
-    "objectID": "slides/slides-02-ml-intro.html#tuning-hyperparameters-1",
-    "href": "slides/slides-02-ml-intro.html#tuning-hyperparameters-1",
-    "title": "Introduction to Machine learning",
-    "section": "Tuning hyperparameters",
-    "text": "Tuning hyperparameters\n\n\nThere are many tools available to automate the search for good hyperparameters. These can make our life easy, but there is always the danger of optimization bias in the results."
+    "objectID": "slides/slides-03-deep-learning.html#dataset-statistics",
+    "href": "slides/slides-03-deep-learning.html#dataset-statistics",
+    "title": "Deep Learning",
+    "section": "Dataset statistics",
+    "text": "Dataset statistics\n\n\nHere is the stat of our toy dataset.\n\n\nClasses: ['beet_salad', 'chocolate_cake', 'edamame', 'french_fries', 'pizza', 'spring_rolls', 'sushi']\nClass count: 40, 38, 40\nSamples: 283\nFirst sample: ('data/food/train/beet_salad/104294.jpg', 0)"
   },
   {
-    "objectID": "slides/slides-02-ml-intro.html#investigating-the-model",
-    "href": "slides/slides-02-ml-intro.html#investigating-the-model",
-    "title": "Introduction to Machine learning",
-    "section": "Investigating the model",
-    "text": "Investigating the model\n\n\n\nLet’s see what associations our model learned.\n\n\n\n\n\n\n\n\n\nCoefficient\n\n\n\n\nexcellent\n0.808095\n\n\namazing\n0.645762\n\n\nperfect\n0.634630\n\n\nwonderful\n0.608619\n\n\nsurprised\n0.579001\n\n\n...\n...\n\n\nwaste\n-0.732734\n\n\nterrible\n-0.761241\n\n\nboring\n-0.771083\n\n\nawful\n-0.918850\n\n\nworst\n-1.183991\n\n\n\n\n35885 rows × 1 columns"
+    "objectID": "slides/slides-03-deep-learning.html#pre-trained-models-to-extract-features-3",
+    "href": "slides/slides-03-deep-learning.html#pre-trained-models-to-extract-features-3",
+    "title": "Deep Learning",
+    "section": "Pre-trained models to extract features",
+    "text": "Pre-trained models to extract features\n\n\n\nNow for each image in our dataset, we’ll extract a feature vector from a pre-trained model called densenet121, which is trained on the ImageNet dataset."
   },
   {
-    "objectID": "slides/slides-02-ml-intro.html#investigating-the-model-1",
-    "href": "slides/slides-02-ml-intro.html#investigating-the-model-1",
-    "title": "Introduction to Machine learning",
-    "section": "Investigating the model",
-    "text": "Investigating the model\n\n\nThey make sense! Let’s visualize the 20 most important features."
+    "objectID": "slides/slides-03-deep-learning.html#shape-of-the-feature-vector",
+    "href": "slides/slides-03-deep-learning.html#shape-of-the-feature-vector",
+    "title": "Deep Learning",
+    "section": "Shape of the feature vector",
+    "text": "Shape of the feature vector\n\n\n\nNow we have extracted feature vectors for all examples. What’s the shape of these features?\n\n\n\ntorch.Size([283, 1024])\n\n\n\nThe size of each feature vector is 1024 because the size of the last layer in densenet architecture is 1024.\n\n\nSource"
   },
   {
-    "objectID": "slides/slides-02-ml-intro.html#making-predictions",
-    "href": "slides/slides-02-ml-intro.html#making-predictions",
-    "title": "Introduction to Machine learning",
-    "section": "Making Predictions",
-    "text": "Making Predictions\n\n\nFinally, let’s try predicting on some new examples.\n\n\n\n['It got a bit boring at times but the direction was excellent and the acting was flawless. Overall I enjoyed the movie and I highly recommend it!',\n 'The plot was shallower than a kiddie pool in a drought, but hey, at least we now know emojis should stick to texting and avoid the big screen.']\n\n\nHere are the model predictions:\n\n\narray(['positive', 'negative'], dtype=object)\n\n\n\n\nLet’s see which vocabulary words were present in the first review, and how they contributed to the classification."
+    "objectID": "slides/slides-03-deep-learning.html#a-feature-vector-given-by-densenet",
+    "href": "slides/slides-03-deep-learning.html#a-feature-vector-given-by-densenet",
+    "title": "Deep Learning",
+    "section": "A feature vector given by densenet",
+    "text": "A feature vector given by densenet\n \n\nLet’s examine the feature vectors.\n\n\n\n\n\n\n\n\n\n\n0\n1\n2\n3\n4\n5\n6\n7\n8\n9\n...\n1014\n1015\n1016\n1017\n1018\n1019\n1020\n1021\n1022\n1023\n\n\n\n\n0\n0.000290\n0.003821\n0.005015\n0.001307\n0.052690\n0.063403\n0.000626\n0.001850\n0.256254\n0.000223\n...\n0.229935\n1.046375\n2.241259\n0.229641\n0.033674\n0.742792\n1.338698\n2.130880\n0.625475\n0.463088\n\n\n1\n0.000407\n0.005973\n0.003206\n0.001932\n0.090702\n0.438523\n0.001513\n0.003906\n0.166081\n0.000286\n...\n0.910680\n1.580815\n0.087191\n0.606904\n0.436106\n0.306456\n0.940102\n1.159818\n1.712705\n1.624753\n\n\n2\n0.000626\n0.005090\n0.002887\n0.001299\n0.091715\n0.548537\n0.000491\n0.003587\n0.266537\n0.000408\n...\n0.465152\n0.678276\n0.946387\n1.194697\n2.537747\n1.642383\n0.701200\n0.115620\n0.186433\n0.166605\n\n\n3\n0.000169\n0.006087\n0.002489\n0.002167\n0.087537\n0.623212\n0.000427\n0.000226\n0.460680\n0.000388\n...\n0.394083\n0.700158\n0.105200\n0.856323\n0.038457\n0.023948\n0.131838\n1.296370\n0.723323\n1.915215\n\n\n4\n0.000286\n0.005520\n0.001906\n0.001599\n0.186034\n0.850148\n0.000835\n0.003025\n0.036309\n0.000142\n...\n3.313760\n0.565744\n0.473564\n0.139446\n0.029283\n1.165938\n0.442319\n0.227593\n0.884266\n1.592698\n\n\n\n\n5 rows × 1024 columns\n\n\n\n\nThe features are hard to interpret but they have some important information about the images which can be useful for classification."
   },
   {
-    "objectID": "slides/slides-02-ml-intro.html#understanding-predictions",
-    "href": "slides/slides-02-ml-intro.html#understanding-predictions",
-    "title": "Introduction to Machine learning",
-    "section": "Understanding Predictions",
-    "text": "Understanding Predictions\n\n\n\nIt got a bit boring at times but the direction was excellent and the acting was flawless. Overall I enjoyed the movie and I highly recommend it!"
+    "objectID": "slides/slides-03-deep-learning.html#logistic-regression-with-the-extracted-features",
+    "href": "slides/slides-03-deep-learning.html#logistic-regression-with-the-extracted-features",
+    "title": "Deep Learning",
+    "section": "Logistic regression with the extracted features",
+    "text": "Logistic regression with the extracted features\n\n\n\nLet’s try out logistic regression on these extracted features.\n\n\n\nTraining score:  1.0\n\n\n\n\nValidation score:  0.835820895522388\n\n\n\nThis is great accuracy for so little data and little effort!!!"
   },
   {
-    "objectID": "slides/slides-02-ml-intro.html#summary",
-    "href": "slides/slides-02-ml-intro.html#summary",
-    "title": "Introduction to Machine learning",
+    "objectID": "slides/slides-03-deep-learning.html#sample-predictions",
+    "href": "slides/slides-03-deep-learning.html#sample-predictions",
+    "title": "Deep Learning",
+    "section": "Sample predictions",
+    "text": "Sample predictions\n\n\nLet’s examine some sample predictions on the validation set."
+  },
+  {
+    "objectID": "slides/slides-03-deep-learning.html#object-detection",
+    "href": "slides/slides-03-deep-learning.html#object-detection",
+    "title": "Deep Learning",
+    "section": "Object detection",
+    "text": "Object detection\n\n\n\nAnother useful task and tool to know is object detection using YOLO model.\nLet’s identify objects in a sample image using a pretrained model called YOLO8.\nList the objects present in this image."
+  },
+  {
+    "objectID": "slides/slides-03-deep-learning.html#object-detection-using-yolo",
+    "href": "slides/slides-03-deep-learning.html#object-detection-using-yolo",
+    "title": "Deep Learning",
+    "section": "Object detection using YOLO",
+    "text": "Object detection using YOLO\n\n\nLet’s try this out using a pre-trained model.\n\nfrom ultralytics import YOLO\nmodel = YOLO(\"yolov8n.pt\")  # pretrained YOLOv8n model\n\nyolo_input = \"data/yolo_test/3356700488_183566145b.jpg\"\nyolo_result = \"data/yolo_result.jpg\"\n# Run batched inference on a list of images\nresult = model(yolo_input)  # return a list of Results objects\nresult[0].save(filename=yolo_result)\n\n\nimage 1/1 /Users/kvarada/EL/workshops/Intro-to-deep-learning/website/slides/data/yolo_test/3356700488_183566145b.jpg: 512x640 4 persons, 2 cars, 1 stop sign, 59.8ms\nSpeed: 2.0ms preprocess, 59.8ms inference, 6.3ms postprocess per image at shape (1, 3, 512, 640)\n\n\n'data/yolo_result.jpg'"
+  },
+  {
+    "objectID": "slides/slides-03-deep-learning.html#object-detection-output",
+    "href": "slides/slides-03-deep-learning.html#object-detection-output",
+    "title": "Deep Learning",
+    "section": "Object detection output",
+    "text": "Object detection output"
+  },
+  {
+    "objectID": "slides/slides-03-deep-learning.html#summary",
+    "href": "slides/slides-03-deep-learning.html#summary",
+    "title": "Deep Learning",
     "section": "Summary",
-    "text": "Summary\n\n\nThe bag-of-words representation was very simple– we only counted which words appeared in which reviews. There was no attempt to maintain syntactical or grammatical structure or to study correlations between words.\nWe also trained on just 5000 examples. Nevertheless, our model performs quite well."
+    "text": "Summary\n\n\n\nNeural networks are a flexible class of models.\n\nThey are particular powerful for structured input like images, videos, audio, etc.\nThey can be challenging to train and often require significant computational resources.\n\nThe good news is we can use pre-trained neural networks.\n\nThis saves us a huge amount of time/cost/effort/resources.\nWe can use these pre-trained networks directly or use them as feature transformers."
   },
   {
-    "objectID": "slides/slides-02-ml-intro.html#linear-models",
-    "href": "slides/slides-02-ml-intro.html#linear-models",
-    "title": "Introduction to Machine learning",
-    "section": "Linear Models",
-    "text": "Linear Models\n\n\nPros:\n\nEasy to train and to interpret\nWidely applicable despite some strong assumptions\nIf you have a regression task, check whether a linear regression is already good enough! If you have a classification task, logistic regression is a go-to first option.\n\nCons:\n\nStrong assumptions\nLinear decision boundaries for classifiers\nCorrelated features can cause problems"
+    "objectID": "slides/slides-03-deep-learning.html#thank-you",
+    "href": "slides/slides-03-deep-learning.html#thank-you",
+    "title": "Deep Learning",
+    "section": "Thank you!",
+    "text": "Thank you!\n\nThat’s it for the module! Now, let’s work on the hands on exercises."
   },
   {
     "objectID": "workshop-06.html",
@@ -397,7 +418,7 @@
     "href": "index.html",
     "title": "Welcome",
     "section": "",
-    "text": "Welcome\nWelcome everyone to the “Women in AI: Introduction to Deep Learning Workshop”\n\nWhen 🕘 3:00 pm to 4:30 pm on March 15th, 2025\nWhere? 📍 Big 4 Conference Center UBC\n\n\n\nThis workshop aims to provide an accessible introduction to deep learning and inspire a more diverse group of students to explore Machine Learning."
+    "text": "Welcome\nWelcome everyone to the “Women in AI: Introduction to Deep Learning Workshop”\n\nWhen 🕘 3:00 pm to 4:30 pm on March 15th, 2025\nWhere? 📍 Big 4 Conference Center UBC, 2053 Main Mall, Vancouver, BC V6T 1Z1\n\n\n\nThis workshop aims to provide an accessible introduction to deep learning and inspire a more diverse group of students to explore Machine Learning."
   },
   {
     "objectID": "workshop.html",
@@ -512,241 +533,115 @@
     ]
   },
   {
-    "objectID": "slides/slides-03-deep-learning.html#learning-outcomes",
-    "href": "slides/slides-03-deep-learning.html#learning-outcomes",
-    "title": "Deep Learning",
-    "section": "Learning outcomes",
-    "text": "Learning outcomes\n\nFrom this module, you will be able to\n\nExplain the role of neural networks in machine learning, including their advantages and disadvantages.\nDiscuss why traditional methods are less effective for image data.\nGain a high-level understanding of transfer learning.\nUse transfer learning for your own tasks.\nDifferentiate between image classification and object detection."
+    "objectID": "slides/slides-02-ml-intro.html#which-cat-is-ai-generated",
+    "href": "slides/slides-02-ml-intro.html#which-cat-is-ai-generated",
+    "title": "Introduction to Machine Learning",
+    "section": "Which cat is AI-generated?",
+    "text": "Which cat is AI-generated?\n\n\n\nSource\n\n\nWhich one do you think is AI-generated?\n\nA\nB\nBoth\nNone"
   },
   {
-    "objectID": "slides/slides-03-deep-learning.html#image-classification",
-    "href": "slides/slides-03-deep-learning.html#image-classification",
-    "title": "Deep Learning",
+    "objectID": "slides/slides-02-ml-intro.html#example-image-classification",
+    "href": "slides/slides-02-ml-intro.html#example-image-classification",
+    "title": "Introduction to Machine Learning",
+    "section": "Example: Image classification",
+    "text": "Example: Image classification\n\nHave you used search in Google Photos? You can search for “my photos of cat” and it will retrieve photos from your libraries containing cats.\nThis can be done using image classification, which is treated as a supervised learning problem."
+  },
+  {
+    "objectID": "slides/slides-02-ml-intro.html#image-classification",
+    "href": "slides/slides-02-ml-intro.html#image-classification",
+    "title": "Introduction to Machine Learning",
     "section": "Image classification",
-    "text": "Image classification\n\n\nHave you used search in Google Photos? You can search for “my photos of cat” and it will retrieve photos from your libraries containing cats. This can be done using image classification, which is treated as a supervised learning problem, where we define a set of target classes (objects to identify in images), and train a model to recognize them using labeled example photos."
+    "text": "Image classification\n\n\n\n\n\nImagine writing a Python program to differenciate between cats and foxes.\n\nHow would you approach it?"
   },
   {
-    "objectID": "slides/slides-03-deep-learning.html#image-classification-1",
-    "href": "slides/slides-03-deep-learning.html#image-classification-1",
-    "title": "Deep Learning",
-    "section": "Image classification",
-    "text": "Image classification\n\n\nImage classification is not an easy problem because of the variations in the location of the object, lighting, background, camera angle, camera focus etc."
+    "objectID": "slides/slides-02-ml-intro.html#traditional-programming-vs.-ml",
+    "href": "slides/slides-02-ml-intro.html#traditional-programming-vs.-ml",
+    "title": "Introduction to Machine Learning",
+    "section": "Traditional programming vs. ML",
+    "text": "Traditional programming vs. ML\n\nTraditional programming\n\nIdeal for problems where solutions can be derived through the direct application of established algorithms in a clear and predictable manner.\nExample: finding the shortest distance between two nodes (e.g., Dijkstra’s algorithm or the A* algorithm)\n\nMachine learning\n\nAppropriate for scenarios where defining explicit rules or algorithms is challenging due to the complexity or scale of the data.\nExample: Distinguishing between images of cats and foxes by training a machine learning model to recognize patterns that differentiate the two."
   },
   {
-    "objectID": "slides/slides-03-deep-learning.html#neural-networks",
-    "href": "slides/slides-03-deep-learning.html#neural-networks",
-    "title": "Deep Learning",
-    "section": "Neural networks",
-    "text": "Neural networks\n\n\n\nNeural networks are perfect for these types of problems where local structures are important.\nA significant advancement in image classification was the application of convolutional neural networks (ConvNets or CNNs) to this problem.\n\nImageNet Classification with Deep Convolutional Neural Networks\nAchieved a winning test error rate of 15.3%, compared to 26.2% achieved by the second-best entry in the ILSVRC-2012 competition.\n\nLet’s go over the basics of a neural network."
+    "objectID": "slides/slides-02-ml-intro.html#what-is-ml",
+    "href": "slides/slides-02-ml-intro.html#what-is-ml",
+    "title": "Introduction to Machine Learning",
+    "section": "What is ML?",
+    "text": "What is ML?\n\nML uses data to build models that identify patterns, make predictions, or generate content.\nIt enables computers to learn from data.\nNo single model is suitable for all situations."
   },
   {
-    "objectID": "slides/slides-03-deep-learning.html#introduction-to-neural-networks",
-    "href": "slides/slides-03-deep-learning.html#introduction-to-neural-networks",
-    "title": "Deep Learning",
-    "section": "Introduction to neural networks",
-    "text": "Introduction to neural networks\n\n\n\nNeural networks can be viewed a generalization of linear models where we apply a series of transformations.\nHere is graphical representation of a logistic regression model.\nWe have 4 features: x[0], x[1], x[2], x[3]"
+    "objectID": "slides/slides-02-ml-intro.html#when-is-ml-suitable",
+    "href": "slides/slides-02-ml-intro.html#when-is-ml-suitable",
+    "title": "Introduction to Machine Learning",
+    "section": "When is ML suitable?",
+    "text": "When is ML suitable?\n\nML excels when the problem involve identifying complex patterns or relationships in large datasets that are difficult for humans to discern manually.\nRule-based systems are suitable where clear and deterministic rules can be defined. Good for structured decision making.\nHuman experts are good with problems which require deep contextual understanding, ethical judgment, creative input, or emotional intelligence."
   },
   {
-    "objectID": "slides/slides-03-deep-learning.html#adding-a-layer-of-transformations",
-    "href": "slides/slides-03-deep-learning.html#adding-a-layer-of-transformations",
-    "title": "Deep Learning",
-    "section": "Adding a layer of transformations",
-    "text": "Adding a layer of transformations\n\n\n\nBelow we are adding one “layer” of transformations in between features and the target.\nWe are repeating the the process of computing the weighted sum multiple times.\n\nThe hidden units (e.g., h[1], h[2], …) represent the intermediate processing steps."
+    "objectID": "slides/slides-02-ml-intro.html#supervised-learning",
+    "href": "slides/slides-02-ml-intro.html#supervised-learning",
+    "title": "Introduction to Machine Learning",
+    "section": "Supervised learning",
+    "text": "Supervised learning\n\nWe wish to find a model function \\(f\\) that relates \\(X\\) to \\(y\\).\nWe use the model function to predict targets of new examples."
   },
   {
-    "objectID": "slides/slides-03-deep-learning.html#one-more-layer-of-transformations",
-    "href": "slides/slides-03-deep-learning.html#one-more-layer-of-transformations",
-    "title": "Deep Learning",
-    "section": "One more layer of transformations",
-    "text": "One more layer of transformations\n\n\n\nNow we are adding one more layer of transformations."
+    "objectID": "slides/slides-02-ml-intro.html#scenario",
+    "href": "slides/slides-02-ml-intro.html#scenario",
+    "title": "Introduction to Machine Learning",
+    "section": "Scenario",
+    "text": "Scenario\nImagine you’re taking a course with four homework assignments and two quizzes. You’re feeling nervous about Quiz 2, so you want to predict your Quiz 2 grade based on your past performance. You collect data your friends who took the course in the past."
   },
   {
-    "objectID": "slides/slides-03-deep-learning.html#neural-networks-1",
-    "href": "slides/slides-03-deep-learning.html#neural-networks-1",
-    "title": "Deep Learning",
-    "section": "Neural networks",
-    "text": "Neural networks\n\n\n\nWith a neural net, you specify the number of features after each transformation.\n\nIn the above, it goes from 4 to 3 to 3 to 1.\n\nTo make them really powerful compared to the linear models, we apply a non-linear function to the weighted sum for each hidden node.\nNeural network = neural net\nDeep learning ~ using neural networks"
+    "objectID": "slides/slides-02-ml-intro.html#terminology",
+    "href": "slides/slides-02-ml-intro.html#terminology",
+    "title": "Introduction to Machine Learning",
+    "section": "Terminology",
+    "text": "Terminology\nHere are a few rows from the data.\n\n\nFeatures: relevant characteristics of the problem, usually suggested by experts (typically denoted by \\(X\\)).\nTarget: the variable we want to predict (typically denoted by \\(y\\)).\nExample: A row of feature values"
   },
   {
-    "objectID": "slides/slides-03-deep-learning.html#why-neural-networks",
-    "href": "slides/slides-03-deep-learning.html#why-neural-networks",
-    "title": "Deep Learning",
-    "section": "Why neural networks?",
-    "text": "Why neural networks?\n\n\n\nThey can learn very complex functions.\n\nThe fundamental tradeoff is primarily controlled by the number of layers and layer sizes.\nMore layers / bigger layers –&gt; more complex model.\nYou can generally get a model that will not underfit.\n\nThey work really well for structured data:\n\n1D sequence, e.g. timeseries, language\n2D image\n3D image or video\n\nThey’ve had some incredible successes in the last 12 years.\nTransfer learning (coming later today) is really useful."
+    "objectID": "slides/slides-02-ml-intro.html#running-example",
+    "href": "slides/slides-02-ml-intro.html#running-example",
+    "title": "Introduction to Machine Learning",
+    "section": "Running example",
+    "text": "Running example\n\ntoy_df = pd.read_csv(DATA_DIR + 'quiz2-grade-toy-regression.csv')\ntoy_df\n\n\n\n\n\n\n\n\nml_experience\nclass_attendance\nlab1\nlab2\nlab3\nlab4\nquiz1\nquiz2\n\n\n\n\n0\n1\n1\n92\n93\n84\n91\n92\n90\n\n\n1\n1\n0\n94\n90\n80\n83\n91\n84\n\n\n2\n0\n0\n78\n85\n83\n80\n80\n82\n\n\n3\n0\n1\n91\n94\n92\n91\n89\n92\n\n\n4\n0\n1\n77\n83\n90\n92\n85\n90\n\n\n5\n1\n0\n70\n73\n68\n74\n71\n75\n\n\n6\n1\n0\n80\n88\n89\n88\n91\n91\n\n\n\n\n\n\n\n\nCan you think of other relevant features for this problem?"
   },
   {
-    "objectID": "slides/slides-03-deep-learning.html#why-not-neural-networks",
-    "href": "slides/slides-03-deep-learning.html#why-not-neural-networks",
-    "title": "Deep Learning",
-    "section": "Why not neural networks?",
-    "text": "Why not neural networks?\n\n\n\nOften they require a lot of data.\nThey require a lot of compute time, and, to be faster, specialized hardware called GPUs.\nThey have huge numbers of hyperparameters\n\nThink of each layer having hyperparameters, plus some overall hyperparameters.\nBeing slow compounds this problem.\n\nThey are not interpretable.\nI don’t recommend training them on your own without further training\nGood news\n\nYou don’t have to train your models from scratch in order to use them.\nI’ll show you some ways to use neural networks without training them yourselves."
+    "objectID": "slides/slides-02-ml-intro.html#classification-vs.-regression",
+    "href": "slides/slides-02-ml-intro.html#classification-vs.-regression",
+    "title": "Introduction to Machine Learning",
+    "section": "Classification vs. Regression",
+    "text": "Classification vs. Regression"
   },
   {
-    "objectID": "slides/slides-03-deep-learning.html#deep-learning-software",
-    "href": "slides/slides-03-deep-learning.html#deep-learning-software",
-    "title": "Deep Learning",
-    "section": "Deep learning software",
-    "text": "Deep learning software\n\n\nThe current big players are:\n\nPyTorch\nTensorFlow\n\nBoth are heavily used in industry. If interested, see comparison of deep learning software."
+    "objectID": "slides/slides-02-ml-intro.html#training",
+    "href": "slides/slides-02-ml-intro.html#training",
+    "title": "Introduction to Machine Learning",
+    "section": "Training",
+    "text": "Training\n\nIn supervised ML, the goal is to learn a function that maps input features (\\(X\\)) to a target (\\(y\\)).\nThe relationship between \\(X\\) and \\(y\\) is often complex, making it difficult to define mathematically.\nWe use algorithms to approximate this complex relationship between \\(X\\) and \\(y\\).\nTraining is the process of applying an algorithm to learn the best function (or model) that maps \\(X\\) to \\(y\\)."
   },
   {
-    "objectID": "slides/slides-03-deep-learning.html#introduction-to-computer-vision",
-    "href": "slides/slides-03-deep-learning.html#introduction-to-computer-vision",
-    "title": "Deep Learning",
-    "section": "Introduction to computer vision",
-    "text": "Introduction to computer vision\n\n\n\nComputer vision refers to understanding images/videos, usually using ML/AI.\nIn the last decade this field has been dominated by deep learning. We will explore image classification and object detection."
+    "objectID": "slides/slides-02-ml-intro.html#linear-models",
+    "href": "slides/slides-02-ml-intro.html#linear-models",
+    "title": "Introduction to Machine Learning",
+    "section": "Linear models",
+    "text": "Linear models\n\n\n\nLinear models make an assumption that the relationship between X and y is linear.\nIn this case, with only one feature, our model is a straight line.\nWhat do we need to represent a line?\n\nSlope (\\(w_1\\)): Determines the angle of the line.\nY-intercept (\\(w_0\\)): Where the line crosses the y-axis.\n\n\n\n\n\n\n\n\n\n\n\n\n\nMaking predictions\n\n\\(y_{hat} = w_1 \\times \\text{\\# hours studied} + w_0\\)"
   },
   {
-    "objectID": "slides/slides-03-deep-learning.html#introduction-to-computer-vision-1",
-    "href": "slides/slides-03-deep-learning.html#introduction-to-computer-vision-1",
-    "title": "Deep Learning",
-    "section": "Introduction to computer vision",
-    "text": "Introduction to computer vision\n\n\n\nimage classification: is this a cat or a dog?\nobject localization: where is the cat in this image?\nobject detection: What are the various objects in the image?\ninstance segmentation: What are the shapes of these various objects in the image?\nand much more…"
+    "objectID": "slides/slides-02-ml-intro.html#logistic-regression",
+    "href": "slides/slides-02-ml-intro.html#logistic-regression",
+    "title": "Introduction to Machine Learning",
+    "section": "Logistic regression",
+    "text": "Logistic regression\n\nSuppose your target is binary: pass or fail\nLogistic regression is used for such binary classification tasks.\n\nLogistic regression predicts a probability that the given example belongs to a particular class.\nIt uses Sigmoid function to map any real-valued input into a value between 0 and 1, representing the probability of a specific outcome.\nA threshold (usually 0.5) is applied to the predicted probability to decide the final class label."
   },
   {
-    "objectID": "slides/slides-03-deep-learning.html#pre-trained-models",
-    "href": "slides/slides-03-deep-learning.html#pre-trained-models",
-    "title": "Deep Learning",
-    "section": "Pre-trained models",
-    "text": "Pre-trained models\n\n\n\nIn practice, very few people train an entire CNN from scratch because it requires a large dataset, powerful computers, and a huge amount of human effort to train the model.\nInstead, a common practice is to download a pre-trained model and fine tune it for your task. This is called transfer learning.\nTransfer learning is one of the most common techniques used in the context of computer vision and natural language processing.\nIt refers to using a model already trained on one task as a starting point for learning to perform another task."
+    "objectID": "slides/slides-02-ml-intro.html#logistic-regression-1",
+    "href": "slides/slides-02-ml-intro.html#logistic-regression-1",
+    "title": "Introduction to Machine Learning",
+    "section": "Logistic regression",
+    "text": "Logistic regression\n\n\n\n\n\n\n\n\n\n\n\n\n\nSigmoid Function: \\(\\hat{y} = \\sigma(w^\\top x_i + b) = \\frac{1}{1 + e^{-(w^\\top x_i + b)}}\\)\nIf you study \\(\\leq 3\\) hours, you fail.\nIf you study \\(&gt; 3\\) hours, you pass."
   },
   {
-    "objectID": "slides/slides-03-deep-learning.html#pre-trained-models-out-of-the-box",
-    "href": "slides/slides-03-deep-learning.html#pre-trained-models-out-of-the-box",
-    "title": "Deep Learning",
-    "section": "Pre-trained models out-of-the-box",
-    "text": "Pre-trained models out-of-the-box\n\n\n\n\n\nLet’s first apply one of these pre-trained models to our own problem right out of the box."
-  },
-  {
-    "objectID": "slides/slides-03-deep-learning.html#pre-trained-models-out-of-the-box-1",
-    "href": "slides/slides-03-deep-learning.html#pre-trained-models-out-of-the-box-1",
-    "title": "Deep Learning",
-    "section": "Pre-trained models out-of-the-box",
-    "text": "Pre-trained models out-of-the-box\n\n\n\nWe can easily download famous models using the torchvision.models module. All models are available with pre-trained weights (based on ImageNet’s 224 x 224 images)\nWe used a pre-trained model vgg16 which is trained on the ImageNet data.\nWe preprocess the given image.\nWe get prediction from this pre-trained model on a given image along with prediction probabilities.\n\nFor a given image, this model will spit out one of the 1000 classes from ImageNet."
-  },
-  {
-    "objectID": "slides/slides-03-deep-learning.html#pre-trained-models-out-of-the-box-2",
-    "href": "slides/slides-03-deep-learning.html#pre-trained-models-out-of-the-box-2",
-    "title": "Deep Learning",
-    "section": "Pre-trained models out-of-the-box",
-    "text": "Pre-trained models out-of-the-box\n\nLet’s predict labels with associated probabilities for unseen images\n\n\n\n\n\n\n\n\n\n\n\n                         Class  Probability score\n                     tiger cat              0.353\n              tabby, tabby cat              0.207\n               lynx, catamount              0.050\nPembroke, Pembroke Welsh corgi              0.046\n--------------------------------------------------------------\n\n\n\n\n\n\n\n\n\n                                     Class  Probability score\n         cheetah, chetah, Acinonyx jubatus              0.983\n                  leopard, Panthera pardus              0.012\njaguar, panther, Panthera onca, Felis onca              0.004\n       snow leopard, ounce, Panthera uncia              0.001\n--------------------------------------------------------------\n\n\n\n\n\n\n\n\n\n                                   Class  Probability score\n                                 macaque              0.714\npatas, hussar monkey, Erythrocebus patas              0.122\n      proboscis monkey, Nasalis larvatus              0.098\n                   guenon, guenon monkey              0.017\n--------------------------------------------------------------\n\n\n\n\n\n\n\n\n\n                        Class  Probability score\nWalker hound, Walker foxhound              0.580\n             English foxhound              0.091\n                  EntleBucher              0.080\n                       beagle              0.065\n--------------------------------------------------------------"
-  },
-  {
-    "objectID": "slides/slides-03-deep-learning.html#pre-trained-models-out-of-the-box-3",
-    "href": "slides/slides-03-deep-learning.html#pre-trained-models-out-of-the-box-3",
-    "title": "Deep Learning",
-    "section": "Pre-trained models out-of-the-box",
-    "text": "Pre-trained models out-of-the-box\n\n\n\nWe got these predictions without “doing the ML ourselves”.\nWe are using pre-trained vgg16 model which is available in torchvision.\n\ntorchvision has many such pre-trained models available that have been very successful across a wide range of tasks: AlexNet, VGG, ResNet, Inception, MobileNet, etc.\n\nMany of these models have been pre-trained on famous datasets like ImageNet.\nSo if we use them out-of-the-box, they will give us one of the ImageNet classes as classification."
-  },
-  {
-    "objectID": "slides/slides-03-deep-learning.html#pre-trained-models-out-of-the-box-4",
-    "href": "slides/slides-03-deep-learning.html#pre-trained-models-out-of-the-box-4",
-    "title": "Deep Learning",
-    "section": "Pre-trained models out-of-the-box",
-    "text": "Pre-trained models out-of-the-box\n\n\n\nLet’s try some images which are unlikely to be there in ImageNet.\nIt’s not doing very well here because ImageNet doesn’t have proper classes for these images.\n\n\n\n\n\n\n\n\n\n\n\n         Class  Probability score\ncucumber, cuke              0.146\n         plate              0.117\n     guacamole              0.099\n  Granny Smith              0.091\n--------------------------------------------------------------\n\n\n\n\n\n\n\n\n\n                                      Class  Probability score\n                                        fig              0.637\n                                pomegranate              0.193\ngrocery store, grocery, food market, market              0.041\n                                      crate              0.023\n--------------------------------------------------------------\n\n\n\n\n\n\n\n\n\n                                               Class  Probability score\n                                         toilet seat              0.171\n                                          safety pin              0.060\nbannister, banister, balustrade, balusters, handrail              0.039\n                                              bubble              0.035\n--------------------------------------------------------------\n\n\n\n\n\n\n\n\n\n                  Class  Probability score\n                   vase              0.078\n                thimble              0.074\n             plate rack              0.049\nsaltshaker, salt shaker              0.047\n--------------------------------------------------------------\n\n\n\n\n\n\n\n\n\n                      Class  Probability score\n           pizza, pizza pie              0.998\nfrying pan, frypan, skillet              0.001\n                     potpie              0.000\n                French loaf              0.000\n--------------------------------------------------------------\n\n\n\n\n\n\n\n\n\n              Class  Probability score\n     patio, terrace              0.213\n           fountain              0.164\nlakeside, lakeshore              0.097\n            sundial              0.088\n--------------------------------------------------------------"
-  },
-  {
-    "objectID": "slides/slides-03-deep-learning.html#pre-trained-models-out-of-the-box-5",
-    "href": "slides/slides-03-deep-learning.html#pre-trained-models-out-of-the-box-5",
-    "title": "Deep Learning",
-    "section": "Pre-trained models out-of-the-box",
-    "text": "Pre-trained models out-of-the-box\n\n\n\nHere we are using pre-trained models out-of-the-box.\nCan we use pre-trained models for our own classification problem with our classes?\nYes!! We have two options here:\n\nAdd some extra layers to the pre-trained network to suit our particular task\nPass training data through the network and save the output to use as features for training some other model"
-  },
-  {
-    "objectID": "slides/slides-03-deep-learning.html#pre-trained-models-to-extract-features",
-    "href": "slides/slides-03-deep-learning.html#pre-trained-models-to-extract-features",
-    "title": "Deep Learning",
-    "section": "Pre-trained models to extract features",
-    "text": "Pre-trained models to extract features\n\n\n\nLet’s use pre-trained models to extract features.\nWe will pass our specific data through a pre-trained network to get a feature vector for each example in the data.\nThe feature vector is usually extracted from the last layer, before the classification layer from the pre-trained network.\nYou can think of each layer a transformer applying some transformations on the input received to that later."
-  },
-  {
-    "objectID": "slides/slides-03-deep-learning.html#pre-trained-models-to-extract-features-1",
-    "href": "slides/slides-03-deep-learning.html#pre-trained-models-to-extract-features-1",
-    "title": "Deep Learning",
-    "section": "Pre-trained models to extract features",
-    "text": "Pre-trained models to extract features\n\n\n\nOnce we extract these feature vectors for all images in our training data, we can train a machine learning classifier such as logistic regression or random forest.\nThis classifier will be trained on our classes using feature representations extracted from the pre-trained models.\n\nLet’s try this out.\nIt’s better to train such models with GPU. Since our dataset is quite small, we won’t have problems running it on a CPU."
-  },
-  {
-    "objectID": "slides/slides-03-deep-learning.html#pre-trained-models-to-extract-features-2",
-    "href": "slides/slides-03-deep-learning.html#pre-trained-models-to-extract-features-2",
-    "title": "Deep Learning",
-    "section": "Pre-trained models to extract features",
-    "text": "Pre-trained models to extract features\n\n\nLet’s look at some sample images in the dataset."
-  },
-  {
-    "objectID": "slides/slides-03-deep-learning.html#dataset-statistics",
-    "href": "slides/slides-03-deep-learning.html#dataset-statistics",
-    "title": "Deep Learning",
-    "section": "Dataset statistics",
-    "text": "Dataset statistics\n\n\nHere is the stat of our toy dataset.\n\n\nClasses: ['beet_salad', 'chocolate_cake', 'edamame', 'french_fries', 'pizza', 'spring_rolls', 'sushi']\nClass count: 40, 38, 40\nSamples: 283\nFirst sample: ('data/food/train/beet_salad/104294.jpg', 0)"
-  },
-  {
-    "objectID": "slides/slides-03-deep-learning.html#pre-trained-models-to-extract-features-3",
-    "href": "slides/slides-03-deep-learning.html#pre-trained-models-to-extract-features-3",
-    "title": "Deep Learning",
-    "section": "Pre-trained models to extract features",
-    "text": "Pre-trained models to extract features\n\n\n\nNow for each image in our dataset, we’ll extract a feature vector from a pre-trained model called densenet121, which is trained on the ImageNet dataset."
-  },
-  {
-    "objectID": "slides/slides-03-deep-learning.html#shape-of-the-feature-vector",
-    "href": "slides/slides-03-deep-learning.html#shape-of-the-feature-vector",
-    "title": "Deep Learning",
-    "section": "Shape of the feature vector",
-    "text": "Shape of the feature vector\n\n\n\nNow we have extracted feature vectors for all examples. What’s the shape of these features?\n\n\n\ntorch.Size([283, 1024])\n\n\n\nThe size of each feature vector is 1024 because the size of the last layer in densenet architecture is 1024.\n\n\nSource"
-  },
-  {
-    "objectID": "slides/slides-03-deep-learning.html#a-feature-vector-given-by-densenet",
-    "href": "slides/slides-03-deep-learning.html#a-feature-vector-given-by-densenet",
-    "title": "Deep Learning",
-    "section": "A feature vector given by densenet",
-    "text": "A feature vector given by densenet\n \n\nLet’s examine the feature vectors.\n\n\n\n\n\n\n\n\n\n\n0\n1\n2\n3\n4\n5\n6\n7\n8\n9\n...\n1014\n1015\n1016\n1017\n1018\n1019\n1020\n1021\n1022\n1023\n\n\n\n\n0\n0.000290\n0.003821\n0.005015\n0.001307\n0.052690\n0.063403\n0.000626\n0.001850\n0.256254\n0.000223\n...\n0.229935\n1.046375\n2.241259\n0.229641\n0.033674\n0.742792\n1.338698\n2.130880\n0.625475\n0.463088\n\n\n1\n0.000407\n0.005973\n0.003206\n0.001932\n0.090702\n0.438523\n0.001513\n0.003906\n0.166081\n0.000286\n...\n0.910680\n1.580815\n0.087191\n0.606904\n0.436106\n0.306456\n0.940102\n1.159818\n1.712705\n1.624753\n\n\n2\n0.000626\n0.005090\n0.002887\n0.001299\n0.091715\n0.548537\n0.000491\n0.003587\n0.266537\n0.000408\n...\n0.465152\n0.678276\n0.946387\n1.194697\n2.537747\n1.642383\n0.701200\n0.115620\n0.186433\n0.166605\n\n\n3\n0.000169\n0.006087\n0.002489\n0.002167\n0.087537\n0.623212\n0.000427\n0.000226\n0.460680\n0.000388\n...\n0.394083\n0.700158\n0.105200\n0.856323\n0.038457\n0.023948\n0.131838\n1.296370\n0.723323\n1.915215\n\n\n4\n0.000286\n0.005520\n0.001906\n0.001599\n0.186034\n0.850148\n0.000835\n0.003025\n0.036309\n0.000142\n...\n3.313760\n0.565744\n0.473564\n0.139446\n0.029283\n1.165938\n0.442319\n0.227593\n0.884266\n1.592698\n\n\n\n\n5 rows × 1024 columns\n\n\n\n\nThe features are hard to interpret but they have some important information about the images which can be useful for classification."
-  },
-  {
-    "objectID": "slides/slides-03-deep-learning.html#logistic-regression-with-the-extracted-features",
-    "href": "slides/slides-03-deep-learning.html#logistic-regression-with-the-extracted-features",
-    "title": "Deep Learning",
-    "section": "Logistic regression with the extracted features",
-    "text": "Logistic regression with the extracted features\n\n\n\nLet’s try out logistic regression on these extracted features.\n\n\n\nTraining score:  1.0\n\n\n\n\nValidation score:  0.835820895522388\n\n\n\nThis is great accuracy for so little data and little effort!!!"
-  },
-  {
-    "objectID": "slides/slides-03-deep-learning.html#sample-predictions",
-    "href": "slides/slides-03-deep-learning.html#sample-predictions",
-    "title": "Deep Learning",
-    "section": "Sample predictions",
-    "text": "Sample predictions\n\n\nLet’s examine some sample predictions on the validation set."
-  },
-  {
-    "objectID": "slides/slides-03-deep-learning.html#object-detection",
-    "href": "slides/slides-03-deep-learning.html#object-detection",
-    "title": "Deep Learning",
-    "section": "Object detection",
-    "text": "Object detection\n\n\n\nAnother useful task and tool to know is object detection using YOLO model.\nLet’s identify objects in a sample image using a pretrained model called YOLO8.\nList the objects present in this image."
-  },
-  {
-    "objectID": "slides/slides-03-deep-learning.html#object-detection-using-yolo",
-    "href": "slides/slides-03-deep-learning.html#object-detection-using-yolo",
-    "title": "Deep Learning",
-    "section": "Object detection using YOLO",
-    "text": "Object detection using YOLO\n\n\nLet’s try this out using a pre-trained model.\n\nfrom ultralytics import YOLO\nmodel = YOLO(\"yolov8n.pt\")  # pretrained YOLOv8n model\n\nyolo_input = \"data/yolo_test/3356700488_183566145b.jpg\"\nyolo_result = \"data/yolo_result.jpg\"\n# Run batched inference on a list of images\nresult = model(yolo_input)  # return a list of Results objects\nresult[0].save(filename=yolo_result)\n\n\nimage 1/1 /Users/kvarada/EL/workshops/Intro-to-deep-learning/website/slides/data/yolo_test/3356700488_183566145b.jpg: 512x640 4 persons, 2 cars, 1 stop sign, 77.6ms\nSpeed: 2.0ms preprocess, 77.6ms inference, 6.1ms postprocess per image at shape (1, 3, 512, 640)\n\n\n'data/yolo_result.jpg'"
-  },
-  {
-    "objectID": "slides/slides-03-deep-learning.html#object-detection-output",
-    "href": "slides/slides-03-deep-learning.html#object-detection-output",
-    "title": "Deep Learning",
-    "section": "Object detection output",
-    "text": "Object detection output"
-  },
-  {
-    "objectID": "slides/slides-03-deep-learning.html#summary",
-    "href": "slides/slides-03-deep-learning.html#summary",
-    "title": "Deep Learning",
-    "section": "Summary",
-    "text": "Summary\n\n\n\nNeural networks are a flexible class of models.\n\nThey are particular powerful for structured input like images, videos, audio, etc.\nThey can be challenging to train and often require significant computational resources.\n\nThe good news is we can use pre-trained neural networks.\n\nThis saves us a huge amount of time/cost/effort/resources.\nWe can use these pre-trained networks directly or use them as feature transformers."
-  },
-  {
-    "objectID": "slides/slides-03-deep-learning.html#thank-you",
-    "href": "slides/slides-03-deep-learning.html#thank-you",
-    "title": "Deep Learning",
-    "section": "Thank you!",
-    "text": "Thank you!\n\nThat’s it for the module! Now, let’s work on the hands on exercises."
+    "objectID": "slides/slides-02-ml-intro.html#a-graphical-representation-of-a-linear-model",
+    "href": "slides/slides-02-ml-intro.html#a-graphical-representation-of-a-linear-model",
+    "title": "Introduction to Machine Learning",
+    "section": "A graphical representation of a linear model",
+    "text": "A graphical representation of a linear model\n\n\n\n\n\n\n\n\n\n\n\n\n\nWe have 4 features: x[0], x[1], x[2], x[3]\nThe output is calculated as \\(y = x[0]w[0] + x[1]w[1] + x[2]w[2] + x[3]w[3]\\)\nFor simplicity, we are ignoring the bias term."
   }
 ]
