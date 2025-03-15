@@ -1,299 +1,280 @@
 ---
-title: "Introduction to Linear Models"
-format: 
+title: "Introduction to Machine Learning"
+format:
     revealjs:
-      smaller: true
-      center: true
+        html-math-method: mathjax
+        slide-number: true
+        slide-level: 2
+        theme:
+          - slides.scss
+        center: true
+        resources:
+          - data/
+          - img/
 ---
 
-## Introduction to Machine Learning
-\
-Machine Learning uses computer programs to digest and accurately model data. After *training* on the data, a program can be used to extract hidden patterns, make predictions in new situations or generate novel content.
+```{python}
+import os
+import sys
 
-The program learns based on the *features* present in the data, which represent the information we have about each example.
+import matplotlib.pyplot as plt
+import numpy as np
+import pandas as pd
 
-## Introduction to Machine Learning
-\ 
+sys.path.append(os.path.join(os.path.abspath("."), "code"))
+from plotting_functions import *
+from utils import *
+from sklearn.compose import ColumnTransformer, make_column_transformer
+from sklearn.impute import SimpleImputer
+from sklearn.model_selection import cross_val_score, cross_validate, train_test_split
+from sklearn.neighbors import KNeighborsClassifier
+from sklearn.pipeline import Pipeline, make_pipeline
+from sklearn.preprocessing import OneHotEncoder, OrdinalEncoder, StandardScaler
+from sklearn.svm import SVC
+from sklearn.datasets import make_blobs, make_classification
+DATA_DIR = os.path.join(os.path.abspath("."), "data/")
 
-![](img/sup-ML-terminology.png)
+```
+
+## Which cat is AI-generated?
+
+:::: {.columns}
+::: {.column width="60%"}
+
+![](img/ai-or-not-cat.png)
+
+[Source](https://thinktan.net/are-you-sure-this-photo-is-not-ai-generated/)
+:::
+
+::: {.column width="40%"}
+
+- Which one do you think is AI-generated?
+    - A
+    - B
+    - Both
+    - None
+:::
+:::: 
 
 
-## Activity 1
-\
-Write one (or several) problems in your area of work where you think Machine Learning could be applied. Try to address the following questions:
 
-* What goal are you trying to accomplish? What would an ideal solution to your problem look like?
-* How would a human solve this problem? What approaches are presently available and utilized?
-* What kind of data is available to you, or might be collected? What features are present in the data?
+# What is Machine Learning (ML)?
 
-One of the learning objectives of the workshop will be to determine whether your goal is best addressed using supervised machine learning, inferential statistics, unsupervised learning, deep learning, generative AI, or a non-ML solution.
+## Example: Image classification
 
-## Classification vs. Regression
-\
+- Have you used search in Google Photos? You can search for "my photos of cat" and it will retrieve photos from your libraries containing cats.
+- This can be done using **image classification**, which is treated as a supervised learning problem. 
+
+## Image classification
+
+:::: {.columns}
+
+::: {.column width="60%"}
+![](img/cat-or-fox.png) 
+:::
+
+::: {.column width="40%"}
+- Imagine writing a Python program to differenciate between cats and foxes.  
+- How would you approach it? 
+::: 
+
+::::
+
+## Traditional programming vs. ML {.smaller}
+
+- Traditional programming 
+    - Ideal for problems where solutions can be derived through the direct application of established algorithms in a clear and predictable manner.
+    - Example: finding the shortest distance between two nodes (e.g., Dijkstra’s algorithm or the A* algorithm)
+- Machine learning
+    - Appropriate for scenarios where defining explicit rules or algorithms is challenging due to the complexity or scale of the data.
+    - Example: Distinguishing between images of cats and foxes by training a machine learning model to recognize patterns that differentiate the two.
+
+##  What is ML? 
+
+- ML uses data to build models that identify patterns, make predictions, or generate content.
+- It enables computers to learn from data.
+- No single model is suitable for all situations.
+
+## When is ML suitable?
+
+- ML excels when the problem involve identifying complex patterns or relationships in large datasets that are difficult for humans to discern manually.
+- Rule-based systems are suitable where clear and deterministic rules can be defined. Good for structured decision making. 
+- Human experts are good with problems which require deep contextual understanding, ethical judgment, creative input, or emotional intelligence.
+
+## Supervised learning
+
+- We wish to find a model function $f$ that relates $X$ to $y$.
+- We use the model function to predict targets of new examples. 
+
+![](img/sup-learning.png){.nostretch fig-align="center" width="700px"}
+
+
+## Scenario
+
+Imagine you're taking a course with four homework assignments and two quizzes. You’re feeling nervous about Quiz 2, so you want to predict your Quiz 2 grade based on your past performance. You collect data your friends who took the course in the past. 
+
+## Terminology {.smaller}
+
+Here are a few rows from the data. 
+
+![](img/sup-ml-terminology.png)
+
+- **Features:** relevant characteristics of the problem, usually suggested by experts  (typically denoted by $X$). 
+- **Target:** the variable we want to predict (typically denoted by $y$). 
+- **Example:** A row of feature values
+
+## Running example {.smaller}
+```{python}
+#| echo: true
+toy_df = pd.read_csv(DATA_DIR + 'quiz2-grade-toy-regression.csv')
+toy_df
+```
+- Can you think of other relevant **features** for this problem? 
+
+## Classification vs. Regression {.smaller}
 
 ![](img/classification-vs-regression.png)
 
-## Measuring Performance
-\
+## Training {.smaller}
 
-* Performance on classification tasks can be measured based on the *accuracy* of the model's predictions.
+- In supervised ML, the goal is to learn a function that maps input features ($X$) to a target ($y$).
+- The relationship between $X$ and $y$ is often complex, making it difficult to define mathematically.
+- We use algorithms to approximate this complex relationship between $X$ and $y$.
+- **Training** is the process of applying an algorithm to learn the best function (or model) that maps $X$ to $y$. 
 
-* Performance on a regression task can be measured based on *error*. Mean squared error is one choice, but there are many others!
+## Linear models {.smaller}
 
+:::: {.columns}
 
-## Inference vs. Prediction
-\
+:::{.column width="45%"}
+- Linear models make an assumption that the relationship between `X` and `y` is linear. 
+- In this case, with only one feature, our model is a straight line.
+- What do we need to represent a line?
+  - Slope ($w_1$): Determines the angle of the line.
+  - Y-intercept ($w_0$): Where the line crosses the y-axis.
 
-* *Inference* is the use of a model to infer a relationship between features (independent variables) and targets (independent variables).
+:::
 
-* *Prediction* is the use of a model to predict the target value for a new example not seen in training.
-
-
-## Example: Linear Regression
-\
-![](img/visualization.png)
-
-Is this inference or prediction?
-
-## Types of Machine Learning
-\
-There are many kinds of machine learning, including
-
-* Supervised Learning (which we'll talk about a lot)
-
-* Unsupervised Learning
-
-* Semi-supervised learning
-
-* Reinforcement Learning
-
-* Generative AI
-
-We will also discuss which problems each type might be best suited for.
-
-## Supervised Learning
-\
-Here the training data is comprised of a set of *features*, and each example comes with a corresponding *target*. The goal is to get a machine learning model to accurately predict the target based on the feature values.
-
-Examples could include spam filtering, face recognition or weather forecasting.
-
-By contrast, in unsupervised learning there are no targets. The goal is instead to uncover underlying patterns. These can be used to provide a concise summary of the data, or group similar examples together. Examples could include customer segmentation, anomaly detection or online recommendation systems (think Netflix).
-
-## Linear Classifiers
-\
-
-We can also build linear models for classification tasks. The idea is to convert the output from an arbitrary number to a number between 0 and 1, and treat it like a "probability".
-
-In *logistic regression*, we squash the output using the sigmoid function and then adjust parameters (in training) to find the choice that makes the data "most likely".
-
-## Linear Classifiers
-
-![](img/us-map.png)
-
-Can you guess what this dataset is?
-
-## Linear Classifiers
-
-![](img/logistic.png)
-
-Logistic Regression predicts a *linear* decision boundary.
-
-## Sentiment Analysis: An Example
-
+::: {.column width="55%"}
 ```{python}
-import sys, os
-sys.path.append(os.path.join(os.path.abspath("."), "code"))
-from sup_learning import *
+import matplotlib.pyplot as plt
+import numpy as np
+# Data
+hours_studied = [0.5, 1.0, 2.0, 2.0, 3.5, 4.0, 5.5, 6.0]
+grades = [25, 35, 70, 40, 60, 55, 75, 80]
+
+# Convert data to numpy arrays and reshape for model fitting
+X = np.array(hours_studied).reshape(-1, 1)
+y = np.array(grades)
+
+from sklearn.linear_model import LinearRegression
+# Fit a linear regression model
+model = LinearRegression()
+model.fit(X, y)
+
+# Generate predictions for plotting the regression line
+X_range = np.linspace(X.min(), X.max(), 100).reshape(-1, 1)
+y_pred = model.predict(X_range)
+
+# Plotting the data points and the regression line
+plt.figure(figsize=(8, 4))
+plt.scatter(X, y, color='green', edgecolors='black', s=130, label='Data Points')
+plt.plot(X_range, y_pred, color='blue', linewidth=2, label='Regression Line')
+plt.xlabel('# hours studied')
+plt.ylabel('% grade in Quiz 2')
+plt.title('Linear Models: Prediction')
+# plt.legend()
+plt.grid(True)
+plt.show()
 ```
-\
-Let us attempt to use logistic regression to do sentiment analysis on a database of IMDB reviews. The database is available [here](https://www.kaggle.com/datasets/lakshmi25npathi/imdb-dataset-of-50k-movie-reviews?resource=download).
+- Making predictions
+    - $y_{hat} = w_1 \times \text{\# hours studied} + w_0$
+
+:::
+::::
+
+
+## Logistic regression {.smaller}
+- Suppose your target is binary: pass or fail 
+- Logistic regression is used for such binary classification tasks.  
+- Logistic regression predicts a probability that the given example belongs to a particular class.
+- It uses **Sigmoid function** to map any real-valued input into a value between 0 and 1, representing the probability of a specific outcome.
+- A threshold (usually 0.5) is applied to the predicted probability to decide the final class label.  
+
+## Logistic regression {.smaller}
+
+:::: {.columns}
+
+:::{.column width="60%"}
 
 ```{python}
-#| echo: True
-imdb_df = pd.read_csv("data/imdb_master.csv", encoding="ISO-8859-1")
-imdb_df.rename(columns={"sentiment": "label"}, inplace = True)
+import matplotlib.pyplot as plt
+import numpy as np
+from sklearn.linear_model import LogisticRegression
+
+# Data
+hours_studied = [0.5, 1.0, 2.0, 2.0, 3.5, 4.0, 5.5, 6.0]
+grades = ['fail', 'fail', 'pass', 'fail', 'pass', 'fail', 'pass', 'pass']
+
+# Converting target variable to binary (0: fail, 1: pass)
+grades_binary = [1 if grade == 'pass' else 0 for grade in grades]
+
+# Reshape the data to fit the model
+X = np.array(hours_studied).reshape(-1, 1)
+y = np.array(grades_binary)
+
+# Fit logistic regression model
+model = LogisticRegression()
+model.fit(X, y)
+
+# Generate a range of hours studied for prediction
+X_test = np.linspace(min(hours_studied), max(hours_studied), 100).reshape(-1, 1)
+
+# Predict probabilities
+probabilities = model.predict_proba(X_test)[:, 1]
+
+# Find decision boundary (where probability = 0.5)
+decision_boundary = X_test[np.isclose(probabilities, 0.5, atol=0.01)][0]
+
+# Plotting
+plt.figure(figsize=(8, 5))
+plt.scatter(hours_studied, y, color='red', label='0=Fail, 1=Pass')
+plt.plot(X_test, probabilities, label='Prediction Probability', color='blue')
+plt.axvline(x=decision_boundary, ymin=0, ymax=0.5, color='green', linestyle='--')
+plt.hlines(y=0.5, xmin=min(hours_studied), xmax=decision_boundary, color='green', linestyle='--')
+# Decision boundary (dotted vertical line)
+plt.axvline(x=decision_boundary, color='green', linestyle='-', linewidth=4, label='Decision Boundary (0.5)')
+plt.xlabel('Hours Studied')
+plt.ylabel('Probability of Passing')
+plt.title('Logistic Regression Prediction Probabilities')
+plt.legend(loc="best", fontsize="small")
+plt.grid(True)
+plt.show()
 ```
+:::
+:::{.column width="40%"}
+- Sigmoid Function: $\hat{y} = \sigma(w^\top x_i + b) = \frac{1}{1 + e^{-(w^\top x_i + b)}}$
+- If you study $\leq 3$ hours, you fail. 
+- If you study $> 3$ hours, you pass. 
+:::
+
+::::
+
+## A graphical representation of a linear model {.smaller}
+:::: {.columns}
+
+:::{.column width="50%"}
 ```{python}
-imdb_df = imdb_df[imdb_df["label"].str.startswith(("pos", "neg"))]
-imdb_df.head()
-```
+import mglearn
 
-We will use only about 10% of the dataset for training (to speed things up)
-
-```{python}
-imdb_df["review_pp"] = imdb_df["review"].apply(replace_tags)
-train_df, test_df = train_test_split(imdb_df, test_size=0.9, random_state=123)
-X_train, y_train = train_df["review_pp"], train_df["label"]
-X_test, y_test = test_df["review_pp"], test_df["label"]
-```
-
-## Bag of Words
-\
-To create features that logistic regression can use, we will represent these reviews via a "bag of words" strategy.
-
-We create a new feature for every word that appears in the dataset. Then, if a review contains that word exactly once, the corresponding feature gets a value of 1 for that review. If the word appears four times, the feature gets a value of 4. If the word is not present, it's marked as 0.
-
-## Bag of Words
-\
-Notice that the result is a sparse matrix. Most reviews contain only a small number of words.
-
-```{python}
-#| echo: True
-vec = CountVectorizer(stop_words="english")
-bow = vec.fit_transform(X_train)
-bow
-```
-
-There are a total of 38867 "words" among the reviews. Here are some of them: 
-
-```{python}
-vocab = vec.get_feature_names_out()
-vocab[::1000]
-```
-
-## Checking the class counts
-
-Let us see how many reviews are positive, and how many are negative.
-\ 
-
-```{python}
-#| echo: True
-y_train.value_counts()
-```
-\
-
-The dataset looks pretty balanced, so a classifier predicting at random would at best guess about 50% correctly.
-
-We will not train our model.
-
-# Testing Performance
-
-## Testing Performance
-\
-
-Let's see how the model performs after training.
-
-```{python}
-pipe_lr = make_pipeline(
-    CountVectorizer(stop_words="english"),
-    LogisticRegression(max_iter=1000),
-)
-scores = cross_validate(pipe_lr, X_train, y_train, return_train_score=True)
-pd.DataFrame(scores)
-```
-\
-We're able to predict with roughly 84% accuracy on validation sets. Looks like our model learned something!
-
-## Tuning hyperparameters
-\
-
-However, the training scores are perfect (and higher than validation scores) so our model is likely overfitting.
-
-Maybe it just memorized some rare words, each appearing only in one review, and associated these with the review's label. We could try reducing the size of our dictionary to prevent this.
-
-## Tuning hyperparameters
-\
-
-There are many tools available to automate the search for good hyperparameters. These can make our life easy, but there is always the danger of optimization bias in the results.
-
-
-```{python}
-
-from scipy.stats import loguniform, randint, uniform
-from sklearn.model_selection import RandomizedSearchCV
-
-param_dist = {
-    "countvectorizer__max_features": randint(10, len(vocab)),
-    "logisticregression__C": loguniform(1e-3, 1e3)
-}
-pipe_lr = make_pipeline(CountVectorizer(stop_words="english"), LogisticRegression(max_iter=1000))
-random_search = RandomizedSearchCV(pipe_lr, param_dist, n_iter=10, n_jobs=-1, return_train_score=True)
-random_search.fit(X_train, y_train)
-
-best_model = random_search.best_estimator_
-
-```
-
-## Investigating the model
-::: {.scroll-container style="overflow-y: scroll; height: 400px;"}
-\
-
-Let's see what associations our model learned.
-
-```{python}
-#| code-overflow: scroll
-
-# Get feature names
-feature_names = best_model.named_steps['countvectorizer'].get_feature_names_out().tolist()
-
-# Get coefficients 
-coeffs = best_model.named_steps["logisticregression"].coef_.flatten()
-
-word_coeff_df = pd.DataFrame(coeffs, index=feature_names, columns=["Coefficient"])
-word_coeff_df.sort_values(by="Coefficient", ascending=False)
+mglearn.plots.plot_logistic_regression_graph()
 ```
 :::
 
-## Investigating the model
-\
+:::{.column width="50%"}
 
-They make sense! Let's visualize the 20 most important features.
-
-```{python}
-mglearn.tools.visualize_coefficients(coeffs, feature_names, n_top_features=20)
-```
-
-## Making Predictions
-\
-
-Finally, let's try predicting on some new examples.
-\
-
-```{python}
-fake_reviews = ["It got a bit boring at times but the direction was excellent and the acting was flawless. Overall I enjoyed the movie and I highly recommend it!",
- "The plot was shallower than a kiddie pool in a drought, but hey, at least we now know emojis should stick to texting and avoid the big screen."
-]
-fake_reviews
-```
-
-Here are the model predictions:
-
-```{python}
-best_model.predict(fake_reviews)
-```
-
-\
-
-Let's see which vocabulary words were present in the first review, and how they contributed to the classification.
-
-## Understanding Predictions
-::: {.scroll-container style="overflow-y: scroll; height: 400px;"}
-```{python}
-plot_coeff_example(best_model, fake_reviews[0], coeffs, feature_names)
-```
+- We have 4 features: x[0], x[1], x[2], x[3]
+- The output is calculated as $y = x[0]w[0] + x[1]w[1] + x[2]w[2] + x[3]w[3]$
+- For simplicity, we are ignoring the bias term. 
 :::
-
-
-## Summary
-\
-
-The bag-of-words representation was very simple-- we only counted which words appeared in which reviews. There was no attempt to maintain syntactical or grammatical structure or to study correlations between words.
-
-We also trained on just 5000 examples. Nevertheless, our model performs quite well.
-
-
-
-## Linear Models
-\
-
-Pros:
-
-* Easy to train and to interpret
-* Widely applicable despite some strong assumptions
-* If you have a regression task, check whether a linear regression is already good enough! If you have a classification task, logistic regression is a go-to first option.
-
-Cons:
-
-* Strong assumptions
-* Linear decision boundaries for classifiers
-* Correlated features can cause problems
+::::
