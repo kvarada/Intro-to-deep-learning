@@ -117,7 +117,7 @@ Imagine you're taking a course with four homework assignments and two quizzes. Y
 
 Here are a few rows from the data. 
 
-![](img/sup-ml-terminology.png)
+![](img/sup-ML-terminology.png)
 
 - **Features:** relevant characteristics of the problem, usually suggested by experts  (typically denoted by $X$). 
 - **Target:** the variable we want to predict (typically denoted by $y$). 
